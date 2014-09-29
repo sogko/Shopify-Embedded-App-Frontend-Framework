@@ -1,6 +1,21 @@
-/*
-Microapps Shopify Embedded App Frontend Framework
-*/
+/************************************************************************* 
+* 
+*               SHOPIFY EMBEDDED APP FRONTEND FRAMEWORK
+* ========================================================================
+*  
+*   This framework was built in order to help Shopify embedded apps  
+*   developers to build the frontend of their apps quickly and standardized 
+*   with the look and feel of Shopify merchant admin.
+* 
+*   GitHub repository
+*   https://github.com/microapps/Shopify-Embedded-App-Frontend-Framework
+* 
+**************************************************************************/
+
+/****************************************** 
+* GENERAL ELEMENTS
+*******************************************/
+
 * {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
@@ -77,7 +92,9 @@ ul {
   -webkit-padding-start: 40px;
 }
 
-/* Links */
+/****************************************** 
+* LINKS
+*******************************************/
 a {
   color: #479ccf;
   text-decoration: underline;
@@ -120,9 +137,7 @@ hr {
 }
 
 /****************************************** 
-* type: BUTTONS
-* class: btn
-* modifiers: primary, default, filter-left
+* BUTTONS
 *******************************************/
 .btn {
   box-sizing: border-box;
@@ -142,56 +157,56 @@ hr {
 
 /* modifier: primary */
 
-.primary {
+.btn.primary {
   background-color: #479ccf;
   border: 1px solid #2f82b4;
   color: #FFFFFF;
 }
 
-.primary:hover {
+.btn.primary:hover {
   background-color: #3491c8;
   border: #2a74a0 1px solid;
   color: #FFFFFF;
 }
 
-.primary:active {
+.btn.primary:active {
   background-color: #2f82b4;
   border: #24658c 1px solid;
   color: #FFFFFF;
 }
 
 /* modifiers: default, filter-left */
-.default, .filter-left {
+.btn.default, .btn.filter-left {
   background-color: #fcfcfc;
   border: 1px solid #e3e3e3;
   color: #479ccf;
 }
 
-.filter-left {
+.btn.filter-left {
   border-right: none;
   padding: 0 20px 0 9px;
 }
 
-.default:hover, .filter-left:hover {
+.btn.default:hover, .btn.filter-left:hover {
   background-color: #efefef;
   border: #d6d6d6 1px solid;
 }
 
-.filter-left:hover {
+.btn.filter-left:hover {
   border-right: 0;
 }
 
-.default:active, .filter-left:active {
+.btn.default:active, .btn.filter-left:active {
   background-color: #e3e3e3;
   border: #c9c9c9 1px solid;
   border-bottom: 1px solid #e6e6e6;
 }
 
-.filter-left:active {
+.btn.filter-left:active {
   border-right:0;
 }
 
-/* Segmented Butons  - Works perfectly with <ul> */
+/* Segmented Butons - TODO: minor adjustments needed before documenting */
 .segmented {
   margin-left: 5px;
   padding: 0;
@@ -213,9 +228,9 @@ hr {
   text-align: -webkit-match-parent;
 }
 
-/*
-Sections
-*/
+/****************************************** 
+* SECTIONS
+*******************************************/
 .section {
   border-bottom: #dee3e8 1px solid;
   float: none;
@@ -406,9 +421,7 @@ Sections
 }
 
 /****************************************** 
-* type: TAGS
-* class: btn
-* modifiers: primary, default, filter-left
+* TAGS
 *******************************************/
 
 .tag {
@@ -419,13 +432,13 @@ Sections
   border: solid 1px;
 }
 
-.tag.grey {
+.tag.gray {
   background: #aaa;
   color: white;
   border: solid 1px #a0a0a0;
 }
 
-.tag.lightgrey {
+.tag.lightgray {
   background: #f2f4f5;
   color: #96a7b6;
   border: solid 1px #e6ebed;
@@ -443,7 +456,7 @@ Sections
   color: #647f9e;
 }
 
-.tag.unactive {
+.tag.inactive {
   opacity: 0.4;
 }
 
@@ -502,7 +515,9 @@ label.label-normal {
   font-weight: normal;
 }
 
-/* Tables */
+/****************************************** 
+* TABLES
+*******************************************/
 table.table-section {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -518,7 +533,9 @@ table.table-section .sortable:hover {
   cursor: hand;
 }
 
-/* Generic Containers */
+/****************************************** 
+* CONTAINERS
+*******************************************/
 .container {
   position: relative;
   padding: 10px;
@@ -535,7 +552,10 @@ table.table-section .sortable:hover {
   color: #575757;
 }
 
-/* icons */
+/****************************************** 
+* CONTAINERS
+* TODO: Put all as images in one file
+*******************************************/
 .ico-down {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiIHdpZHRoPSI5cHgiIGhlaWdodD0iNHB4IiB2aWV3Qm94PSIwIDAgOSA0IiB2ZXJzaW9uPSIxLjEiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Y2lyY2xlLCBlbGxpcHNlLCBsaW5lLCBwYXRoLCBwb2x5Z29uLCBwb2x5bGluZSwgcmVjdCwgdGV4dCB7IGZpbGw6ICM0NzljY2YgIWltcG9ydGFudDsgfTwvc3R5bGU+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDMuMC4zICg3ODkxKSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5kaXNjbG9zdXJlLWljb248L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcy8+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBza2V0Y2g6dHlwZT0iTVNQYWdlIj4KICAgICAgICA8cG9seWdvbiBpZD0iZGlzY2xvc3VyZS1pY29uIiBmaWxsPSIjOTI5MjkyIiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0LjUwMDAwMCwgMi4wMDAwMDApIHNjYWxlKDEsIC0xKSB0cmFuc2xhdGUoLTQuNTAwMDAwLCAtMi4wMDAwMDApICIgcG9pbnRzPSI0LjUgMCA5IDQgMCA0ICIvPgogICAgPC9nPgo8L3N2Zz4K);
   background-repeat: no-repeat;
