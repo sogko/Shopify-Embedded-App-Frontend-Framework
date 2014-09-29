@@ -1,0 +1,726 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./seaff.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="./snippets-generator.js"></script>
+  </head>
+  <body>
+    <a href="https://github.com/microapps/Shopify-Embedded-App-Frontend-Framework"><img style="position: absolute; top: 0; right: 0; border: 0; z-index:10" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+    <div class="section">
+      <div class="section-summary">
+        <a name="summary"></a>
+        <h1>Summary</h1>
+        <p></p>
+      </div>
+      <div class="section-content">
+        <div class="section-row">
+          <div class="section-cell">
+            <ul>
+              <li>
+                <a href="#introduction">Introduction</a>
+                <ul>
+                  <li><a href="#introduction-overview">Overview</a></li>
+                  <li><a href="#introduction-about">About the documentation</a></li>
+                  <li><a href="#introduction-how">How to use the framework</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#sections">Sections</a>
+                <ul>
+                  <li><a href="#sections-general">General Structure</a></li>
+                  <li><a href="#sections-sample1">Sample Snippet 1 - Section with a single row and a single cell</a></li>
+                  <li><a href="#sections-sample2">Sample Snippet 2 - A section row with 3 cells</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#inputs">Inputs</a>
+                <ul>
+                  <li><a href="#inputs-input">Text input</a></li>
+                  <li><a href="#inputs-textarea">Text Area</a></li>
+                  <li><a href="#inputs-dropdown">Drop-down</a></li>
+                  <li><a href="#inputs-radio">Radio Button</a></li>
+                  <li><a href="#inputs-check">Check Box</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#links">Links</a>
+                <ul>
+                  <li><a href="#links-default">Default Link</a></li>
+                  <li><a href="#links-warning">Warning Link</a></li>
+                  <li><a href="#links-help">Help Link</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#buttons">Buttons</a>
+                <ul>
+                  <li><a href="#buttons-primary">Primary Button</a></li>
+                  <li><a href="#buttons-default">Default Button</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#tags">Tags</a>
+                <ul>
+                  <li><a href="#tags-general">General Structure</a></li>
+                  <li><a href="#tags-lightgray">Light gray tag</a></li>
+                  <li><a href="#tags-gray">Gray tag</a></li>
+                  <li><a href="#tags-blue">Blue tag</a></li>
+                  <li><a href="#tags-orange">Orange tag</a></li>
+                  <li><a href="#tags-inactive">Inactive tag</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#containers">Containers</a>
+                <ul>
+                  <li><a href="#containers-general">General Structure</a></li>
+                  <li><a href="#containers-default">Default Container</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#tables">Tables</a>
+                <ul>
+                  <li><a href="#tables-regular">Regular table</a></li>
+                  <li><a href="#tables-full">Full width table</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <div class="section">
+      <div class="section-summary">
+        <a name="Introduction"></a>
+        <h1>Introduction</h1>
+        <p>A small introduction of the framework</p>
+      </div>
+      <div class="section-content">
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="introduction-overview"></a>
+            <label>Overview</label>
+            <p>This framework is being built and continuously improved by <a href="http://www.microapps.com" target="_blank">microapps</a> based on the layout of Shopify's pages, as well as its embedded applications, in order to help the developers to easily and quickly write the application's frontend so that it has the same look and feel as Shopify's backoffice pages.</p>
+            <p>The documentation is in its first steps, but for now it is already possible to take a look at some of the elements provided by Shopify interface.</p>
+            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+          </div>
+        </div>
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="introduction-about"></a>
+            <label>About the documentation</label>
+            <p>The documentation follows the framework interface and it is divided by sections, which are organized in rows and cells. In which section it is possible to see the elements that are being described by the framework as well as the code used to generate such elements.</p>
+            <p>For the most complex structures, a brief explanation will be given along with the sample and the snippet, while for the simple elements, they along with the snippet are self explanatory</p>
+            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+          </div>
+        </div>
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="introduction-how"></a>
+            <label>How to use the framework</label>
+            <p>This is essentialy a CSS framework, so in order to use it, all you have to do is to add <a target="_blank" href="../../seaff/seaff.css">seaff.css</a> to your application page(s), as shows the following snippet:</p>
+            <label>Code</label>
+            <div class="container to-code">
+              <link rel="stylesheet" type="text/css" href="seaff.css">
+            </div>
+            <p>You can notice by taking a look at the code snippet of each interface element that the styles are applied by putting specific classes to it.</p>
+            <p>This documentation provides snippets for default usage of the classes but, for some elements, different tags can be rendered by using the same class.</p>
+            <p>It is also important to notice that some elements have already all the styles applied to them without using any classes and that for some elements besides the main class there is also a modifier class, that should change that element styles a little.
+            Therefore, the structure of the tags can be generically described, ignoring the attributes and considering "[...]" as optional blocks, using an example of a opening tag, as:</p>
+            <label>Code</label>
+            <div class="container to-code">
+              <tag  [class="main_class[ modifier_1[ ...[ modifier_N]]]"] />
+            </div>
+            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-summary">
+        <a name="sections"></a>
+        <h1>Sections</h1>
+        <p>The sections are the main organizational unit of the framework</p>
+      </div>
+      <div class="section-content">
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="sections-general"></a>
+            <label>General Structure</label>
+            <p>"Introduction", "Sections", "General Inputs", among others, are examples of sections. The sections are used to organize the blocks of information all over the applications (and also all over this document) and they fill the full available width provided by Shopify system.</p>
+            <p>Below some little facts about the sections that are important to be taken into account when organizing the interface:</p>
+            <ul>
+              <li>The sections are devided in two main blocks, the summary and the content.</li>
+              <li>The content is devided in rows (as many as you want).</li>
+              <li>The rows are devided in cells (as many as you want). </li>
+            </ul>
+            <p>"Sections" is a good example of a section with multiple rows and cells. The snippet below shows the general structure of a section:</p>
+            <label for="code-11">Code</label>
+            <div class="container to-code">
+              <!-- This is a section -->
+              <div class="section">
+                <!-- Section summary -->
+                <div class="section-summary">
+                  <h1>Section title</h1>
+                  <p>Section explanation</p>
+                </div>
+                <!-- Section content with generic quantity of rows-->
+                <div class="section-content">
+                  <!-- A section row with generic quantity of cells -->
+                  <div class="section-row">
+                    <div class="section-cell">
+                      ...
+                    </div>
+                    ...
+                    <div class="section-cell">
+                      ...
+                    </div>
+                  </div>
+                  ...
+                  <div class="section-row">
+                    <div class="section-cell">
+                      ...
+                    </div>
+                    ...
+                    <div class="section-cell">
+                      ...
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+          </div>
+        </div>
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="sections-sample1"></a>
+            <label>Sample Snippet 1 - Section with a single row and a single cell</label>
+            <p>"Links", among other sections along this document, is a good example of this kind of section. The following snippet shows how to create this kind of section.</p>
+            <label for="code-11">Code</label>
+            <div class="container to-code">
+              <div class="section">
+                <div class="section-summary">
+                  <h1>Section title</h1>
+                  <p>Section explanation</p>
+                </div>
+                <div class="section-content">
+                  <div class="section-row">
+                    <div class="section-cell">
+                      Information related to the section
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+          </div>
+        </div>
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="sections-sample2"></a>
+            <label>Sample Snippet 2 - A section row with 3 cells</label>
+            <p>The sample snippet below is used to generate a row with 3 cells. Notice that this snippet reffers only to the row and the cells and doesn't take the other parts of the section structure. To build a whole section with 3 sections, replace all the rows in <a href="#anchortothatsnippet">this snippet</a> for the row below.</p>
+            <p>The following snippet reffers to the row just below it.</p>
+            <label>Code</label>
+            <div class="container to-code">
+              <div class="section-row">
+                <div class="section-cell">
+                  <label>Cell 1</label>
+                  This is a cell.
+                </div>
+                <div class="section-cell">
+                  <label>Cell 2</label>
+                  This is a cell.
+                </div>
+                <div class="section-cell">
+                  <label>Cell 3</label>
+                  This is a cell.
+                </div>
+              </div>
+            </div>
+            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+          </div>
+        </div>
+        <div class="section-row">
+          <div class="section-cell">
+            <label>Cell 1</label>
+            This is a cell.
+          </div>
+          <div class="section-cell">
+            <label>Cell 2</label>
+            This is a cell.
+          </div>
+          <div class="section-cell">
+            <label>Cell 3</label>
+            This is a cell.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-summary">
+        <a name="inputs"></a>
+        <h1>Inputs</h1>
+        <p>In this section, the general inputs are documented (text input, text areas, dropdowns, etc)</p>
+      </div>
+      <div class="section-content">
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="inputs-input"></a>
+            <label for="text1">Text input</label>
+            <input type="text" placeholder="Text about the input"/><br/>
+            <label>Code</label>
+            <div class="container to-code">
+              <input type="text" placeholder="Text about the input"/>
+            </div>
+            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+          </div>
+        </div>
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="inputs-textarea"></a>
+            <label for="text2">Text area</label>
+            <textarea placeholder="Text about the input"></textarea><br/>
+            <label>Code</label>
+            <div class="container to-code">
+              <textarea placeholder="Text about the input"></textarea>
+            </div>
+            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+          </div>
+        </div>
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="inputs-dropdown"></a>
+            <label>Drop-down</label>
+            <select name="select1">
+              <option value="opt1">Option 1</option>
+              <option value="opt2">Option 2</option>
+              <option value="opt3">Option 3</option>
+              <option value="opt4">Option 4</option>
+            </select>
+            <label>Code</label>
+            <div class="container to-code">
+              <select name="select1">
+                <option value="opt1">Option 1</option>
+                <option value="opt2">Option 2</option>
+                <option value="opt3">Option 3</option>
+                <option value="opt4">Option 4</option>
+              </select>
+            </div>
+            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+          </div>
+        </div>
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="inputs-radio"></a>
+            <label>Radio button</label><br />
+            <input type="radio" name="rdio" value="radio1"><label for="radio1">Radio 1</label>
+            <input type="radio" name="rdio" value="radio2"><label for="radio2">Radio 2</label>
+            <label>Code</label>
+            <div class="container to-code">
+              <input type="radio" name="rdio" value="radio1"><label for="radio1">Radio 1</label>
+              <input type="radio" name="rdio" value="radio2"><label for="radio2">Radio 2</label>
+            </div>
+            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+          </div>
+        </div>
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="inputs-check"></a>
+            <input type="checkbox" id="check1" name="check1" value="Bike"><label for="check1">Check 1</label>
+            <input type="checkbox" id="check2" name="check2" value="Car"><label for="check2">Check 2 </label>
+            <label>Code</label>
+            <div class="container to-code">
+              <input type="checkbox" id="check1" name="check1" value="Bike"><label for="check1">Check 1</label>
+              <input type="checkbox" id="check2" name="check2" value="Car"><label for="check2">Check 2 </label>
+            </div>
+            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-summary">
+        <a name="links"></a>
+        <h1>Links</h1>
+        <p>In this section you can find all the links provided by this framework</p>
+      </div>
+      <div class="section-content">
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="links-default"></a>
+            <label>Default Link</label>
+            <a href="#top">Defautl Link</a><br /><br />
+            <label for="code-1">Code</label>
+            <div class="container to-code">
+              <a href="#top">Default Link</a>
+            </div>
+            <p class="note">This is the default link. No class should be specified</p>
+            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+          </div>
+        </div>
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="links-warning"></a>
+            <label>Warning Link</label>
+            <a href="#top" class="warning">Warning Link</a><br /><br />
+            <label for="code-2">Code</label>
+            <div class="container to-code">
+              <a href="#top" class="warning">Warning Link</a>
+            </div>
+            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+          </div>
+        </div>
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="links-help"></a>
+            <label>Help Link</label>
+            <a href="#top" class="help">Help Link</a><br /><br />
+            <label for="code-3">Code</label>
+            <div class="container to-code">
+              <a href="#top" class="help">Help Link</a>
+            </div>
+            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-summary">
+        <a name="buttons"></a>
+        <h1>Buttons</h1>
+        <p>In this section you can find all the buttons provided by this framework</p>
+      </div>
+      <div class="section-content">
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="buttons-primary"></a>
+            <label>Primary Button</label>
+            <a href="#top" class="btn primary">Primary Button</a><br /><br />
+            <label for="code-4">Code</label>
+            <div class="container to-code">
+              <a href="#top" class="btn primary">Primary Button</a>
+            </div>
+            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+          </div>
+        </div>
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="buttons-default"></a>
+            <label>Default Button</label>
+            <a href="#top" class="btn default">Default Button</a><br /><br />
+            <label for="code-5">Code</label>
+            <div class="container to-code">
+              <a href="#top" class="btn default">Default Button</a>
+            </div>
+            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+            <br />
+            <div style="display:none">
+              <ul class="segmented">
+                <li><a href="#top" class="btn">Button</a></li>
+                <li><a href="#top" class="btn">Button</a></li>
+                <li><a href="#top" class="btn">Button</a></li>
+                <li><a href="#top" class="btn">Button</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-summary">
+        <a name="tags"></a>
+        <h1>Tags</h1>
+        <p></p>
+      </div>
+      <div class="section-content">
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="tags-general"></a>
+            <label>General Structure</label>
+            <p>A tag can be generated by applying a main class and optionally one or more modifier classes. To generate a tag, you should apply the main class "tag", one of the 4 modifier classes named as colors and optionally the modifier class "inactive". The general structure is as follows:</p>
+            <label for="code-6">Code</label>
+            <div class="container to-code">
+              <span class="tag [<modifier class 1> [<modifier class 2>]]">Tag 1</span>
+            </div>
+            <p>The following samples are ilustrating the use of the modifiers. Notice that one of them has two modifiers, one that applies the color and other to apply a level of transparency.</p>
+            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+          </div>
+        </div>
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="tags-lightgray"></a>
+            <label>Light gray tag</label>
+            <span class="tag lightgray">Tag 1</span><br /><br />
+            <label for="code-6">Code</label>
+            <div class="container to-code">
+              <span class="tag lightgray">Tag 1</span>
+            </div>
+            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+          </div>
+        </div>
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="tags-gray"></a>
+            <label>Gray tag</label>
+            <span class="tag gray">Tag 2</span><br /><br />
+            <label for="code-7">Code</label>
+            <div class="container to-code">
+              <span class="tag gray">Tag 2</span>
+            </div>
+            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+          </div>
+        </div>
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="tags-blue"></a>
+            <label>Blue tag</label>
+            <span class="tag blue">Tag 3</span><br /><br />
+            <label for="code-8">Code</label>
+            <div class="container to-code">
+              <span class="tag blue">Tag 3</span>
+            </div>
+            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+          </div>
+        </div>
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="tags-orange"></a>
+            <label>Orange tag</label>
+            <span class="tag orange">Tag 4</span><br /><br />
+            <label for="code-10">Code</label>
+            <div class="container to-code">
+              <span class="tag orange">Tag 4</span>
+            </div>
+            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+          </div>
+        </div>
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="tags-inactive"></a>
+            <label>Inactive tag</label>
+            <p>This sample tag is used to show how to apply the "inactive" effect and it has three classes, the main class "tag", the modifier color class "blue" and the modifier class "inactive".</p>
+            <p>As you can see, the "inactive" class should be used along with "tag" and one of the available modifier color classes.</p>
+            <span class="tag blue inactive">Tag 5</span><br /><br />
+            <label for="code-9">Code</label>
+            <div class="container to-code">
+              <span class="tag blue inactive">Tag 5</span>
+            </div>
+            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-summary">
+        <a name="tables"></a>
+        <h1>Tables</h1>
+        <p>This section describes the tables used by the framework. The tables that use the whole available width are described right after.</p>
+      </div>
+      <div class="section-content">
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="tables-regular"></a>
+            <label>Regular table</label>
+            <table class="table-section">
+              <thead>
+                <tr>
+                  <th>Column 1</th>
+                  <th>Column 2</th>
+                  <th>Column 3</th>
+                  <th>Column 4</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="#top">Link</a></td>
+                  <td><span class="tag lightgray">Tag</span></td>
+                  <td>Regular text</td>
+                  <td><a href="#top" class="btn default">Button</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#top">Link</a></td>
+                  <td><span class="tag orange">Tag</span></td>
+                  <td>Regular text</td>
+                  <td><a href="#top" class="btn default">Button</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#top">Link</a></td>
+                  <td><span class="tag gray">Tag</span></td>
+                  <td>Regular text</td>
+                  <td><a href="#top" class="btn default">Button</a></td>
+                </tr>
+              </tbody>
+            </table>
+            <br />
+            <label for="code-10">Code</label>
+            <div class="container to-code">
+              <table class="table-section">
+                <thead>
+                  <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                    <th>Column 3</th>
+                    <th>Column 4</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a href="#top">Link</a></td>
+                    <td><span class="tag lightgray">Tag</span></td>
+                    <td>Regular text</td>
+                    <td><a href="#top" class="btn default">Button</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#top">Link</a></td>
+                    <td><span class="tag orange">Tag</span></td>
+                    <td>Regular text</td>
+                    <td><a href="#top" class="btn default">Button</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#top">Link</a></td>
+                    <td><span class="tag gray">Tag</span></td>
+                    <td>Regular text</td>
+                    <td><a href="#top" class="btn default">Button</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+          </div>
+        </div>
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="tables-full"></a>
+            <label>Full width table</label>
+            <p>This table fills the whole available width. If used in place of "section", it will fill the whole iframe width, as you can see in the sample page <a href="list.html">List Sample.</a></p>
+            <p>For documentation purposes, it was written in place of a "section-cell".</p>
+          </div>
+        </div>
+        <div class="section-row">
+          <div class="section-listing" style="margin:0">
+            <div class="section-options">
+              <ul class="section-tabs">
+                <li class="active"><a href="#top">Tab 1</a></li>
+                <li class=""><a href="#top">Tab 2</a></li>
+                <li class=""><a href="#top">Tab 3</a></li>
+              </ul>
+              <div class="section-filter">
+                <div>
+                  <div><a class="btn filter-left ico-down" href="#top">Filter</a></div>
+                  <div class="filter-freecell"><input class="input-search" type="text" placeholder="Information about this filter" /></div>
+                </div>
+              </div>
+              <div class="section-content">
+                <div class="section-row">
+                  <table class="table-section">
+                    <thead>
+                      <tr>
+                        <th class="sortable">Column 1</th>
+                        <th class="sortable">Column 2</th>
+                        <th class="sortable">Column 3</th>
+                        <th class="sortable">Column 4</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><a href="#top">Link</a></td>
+                        <td><span class="tag lightgray">Tag</span></td>
+                        <td>Regular text</td>
+                        <td><a href="#top" class="btn default">Button</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="#top">Link</a></td>
+                        <td><span class="tag orange">Tag</span></td>
+                        <td>Regular text</td>
+                        <td><a href="#top" class="btn default">Button</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="#top">Link</a></td>
+                        <td><span class="tag gray">Tag</span></td>
+                        <td>Regular text</td>
+                        <td><a href="#top" class="btn default">Button</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-row">
+          <div class="section-cell">
+            <label>Code</label>
+            <div class="container to-code">
+              <div class="section-listing">
+                <div class="section-options">
+                  <ul class="section-tabs">
+                    <li class="active"><a href="#top">Tab 1</a></li>
+                    <li class=""><a href="#top">Tab 2</a></li>
+                    <li class=""><a href="#top">Tab 3</a></li>
+                  </ul>
+                  <div class="section-filter">
+                    <div>
+                      <div><a class="btn filter-left ico-down" href="#top">Filter</a></div>
+                      <div class="filter-freecell"><input class="input-search" type="text" placeholder="Information about this filter" /></div>
+                    </div>
+                  </div>
+                  <div class="section-content">
+                    <div class="section-row">
+                      <table class="table-section">
+                        <thead>
+                          <tr>
+                            <th class="sortable">Column 1</th>
+                            <th class="sortable">Column 2</th>
+                            <th class="sortable">Column 3</th>
+                            <th class="sortable">Column 4</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><a href="#top">Link</a></td>
+                            <td><span class="tag lightgray">Tag</span></td>
+                            <td>Regular text</td>
+                            <td><a href="#top" class="btn default">Button</a></td>
+                          </tr>
+                          <tr>
+                            <td><a href="#top">Link</a></td>
+                            <td><span class="tag orange">Tag</span></td>
+                            <td>Regular text</td>
+                            <td><a href="#top" class="btn default">Button</a></td>
+                          </tr>
+                          <tr>
+                            <td><a href="#top">Link</a></td>
+                            <td><span class="tag gray">Tag</span></td>
+                            <td>Regular text</td>
+                            <td><a href="#top" class="btn default">Button</a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      $(
+        function()
+        {
+          createAllSnippets();
+        }
+      );
+    </script>
+  </body>
+</html>
