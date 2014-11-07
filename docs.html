@@ -1,11 +1,11 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="./seaff.css">
+    <link rel="stylesheet" type="text/css" href="seaff.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-    <script type="text/javascript" src="./snippets-generator.js"></script>
+    <script type="text/javascript" src="snippets-generator.js"></script>
   </head>
   <body>
-    <a href="https://github.com/microapps/Shopify-Embedded-App-Frontend-Framework"><img style="position: absolute; top: 0; right: 0; border: 0; z-index:10" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+    <a target="_blank" href="https://github.com/microapps/Shopify-Embedded-App-Frontend-Framework"><img style="position: absolute; top: 0; right: 0; border: 0; z-index:10" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
     <div class="section">
       <div class="section-summary">
         <a name="summary"></a>
@@ -20,8 +20,10 @@
                 <a href="#introduction">Introduction</a>
                 <ul>
                   <li><a href="#introduction-overview">Overview</a></li>
+                  <li><a href="#introduction-what">What are Legacy Apps and Embedded Apps?</a></li>
                   <li><a href="#introduction-about">About the documentation</a></li>
-                  <li><a href="#introduction-how">How to use the framework</a></li>
+                  <li><a href="#introduction-howuse">How to use the framework</a></li>
+                  <li><a href="#introduction-howcontribute">How to contribute</a></li>
                 </ul>
               </li>
               <li>
@@ -55,6 +57,7 @@
                 <ul>
                   <li><a href="#buttons-primary">Primary Button</a></li>
                   <li><a href="#buttons-default">Default Button</a></li>
+                  <li><a href="#buttons-destroy">Destroy Button</a></li>
                 </ul>
               </li>
               <li>
@@ -68,7 +71,7 @@
                   <li><a href="#tags-inactive">Inactive tag</a></li>
                 </ul>
               </li>
-              <li>
+              <li style="display:none">
                 <a href="#containers">Containers</a>
                 <ul>
                   <li><a href="#containers-general">General Structure</a></li>
@@ -99,9 +102,9 @@
           <div class="section-cell">
             <a name="introduction-overview"></a>
             <label>Overview</label>
-            <p>This framework is being built and continuously improved by <a href="http://www.microapps.com" target="_blank">microapps</a> based on the layout of Shopify's pages, as well as its embedded applications, in order to help the developers to easily and quickly write the application's frontend so that it has the same look and feel as Shopify's backoffice pages.</p>
-            <p>The documentation is in its first steps, but for now it is already possible to take a look at some of the elements provided by Shopify interface.</p>
-            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+            <p>This framework is being built and continuously improved by <a href="http://www.microapps.com" target="_blank">microapps</a> based on the layout of Shopify merchant admin, as well as its embedded applications, in order to help the developers to easily and quickly write the application's frontend so that it has the same look and feel as Shopify merchant admin.</p>
+            <p>The documentation is in its first steps, but for now it is already possible to take a look at some of the elements provided by Shopify merchant admin interface.</p>
+            
           </div>
         </div>
         <div class="section-row">
@@ -110,12 +113,24 @@
             <label>About the documentation</label>
             <p>The documentation follows the framework interface and it is divided by sections, which are organized in rows and cells. In which section it is possible to see the elements that are being described by the framework as well as the code used to generate such elements.</p>
             <p>For the most complex structures, a brief explanation will be given along with the sample and the snippet, while for the simple elements, they along with the snippet are self explanatory</p>
-            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+            
           </div>
         </div>
+        
         <div class="section-row">
           <div class="section-cell">
-            <a name="introduction-how"></a>
+            <a name="introduction-what"></a>
+            <label>What are Legacy Apps and Embedded Apps?</label>
+            <p>The legacy apps, nowadays the most common among all apps available for installation for Shopify stores, are apps that, when accessed through the merchant's store admin, open in a new window or tab, as total "independent" (considering the user experience) application, even though it is obviously tightly related to Shopify in terms of funcionality and use of information. </p>
+            <p>Because of this, in order to improve the user experience, Shopify has given the application developers the possibility to develop embedded applications or, in other words, Shopify now allows developers to embed their applications directly inside Shopify admin as well as access and customize many native GUI features. </p>
+            <p><img style="box-sizing: border-box; width: 100%;" src="http://docs.shopify.com/assets/images/easdk/easdk-hero-banner.png?1412114319" /></p>
+            
+          </div>
+        </div>
+        
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="introduction-howuse"></a>
             <label>How to use the framework</label>
             <p>This is essentialy a CSS framework, so in order to use it, all you have to do is to add <a target="_blank" href="../../seaff/seaff.css">seaff.css</a> to your application page(s), as shows the following snippet:</p>
             <label>Code</label>
@@ -130,7 +145,18 @@
             <div class="container to-code">
               <tag  [class="main_class[ modifier_1[ ...[ modifier_N]]]"] />
             </div>
-            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+            
+          </div>
+        </div>
+        
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="introduction-howcontribute"></a>
+            <label>How to contirbute</label>
+            <p>This framework is meant for anyone who wants to have a very good-looking application, following all the patterns stabilished by Shopify merchant admin, and its development is also opened to everyone interested on offering help, which is very appreciated.</p>
+            <p>In order to contribute, just fork the repository <a href="https://github.com/microapps/Shopify-Embedded-App-Frontend-Framework">Shopify-Embedded-App-Frontend-Framework</a> and do as many pull requests as you wish.<p>
+            <p>We thank you in advance!<p>
+            
           </div>
         </div>
       </div>
@@ -147,7 +173,7 @@
           <div class="section-cell">
             <a name="sections-general"></a>
             <label>General Structure</label>
-            <p>"Introduction", "Sections", "General Inputs", among others, are examples of sections. The sections are used to organize the blocks of information all over the applications (and also all over this document) and they fill the full available width provided by Shopify system.</p>
+            <p>"Introduction", "Sections", "General Inputs", among others, are examples of sections. The sections are used to organize the blocks of information all over the applications (and also all over this document) and they fill the full available width provided by Shopify merchant admin.</p>
             <p>Below some little facts about the sections that are important to be taken into account when organizing the interface:</p>
             <ul>
               <li>The sections are devided in two main blocks, the summary and the content.</li>
@@ -189,7 +215,7 @@
                 </div>
               </div>
             </div>
-            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+            
           </div>
         </div>
         <div class="section-row">
@@ -213,7 +239,7 @@
                 </div>
               </div>
             </div>
-            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+            
           </div>
         </div>
         <div class="section-row">
@@ -239,7 +265,7 @@
                 </div>
               </div>
             </div>
-            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+            
           </div>
         </div>
         <div class="section-row">
@@ -275,7 +301,7 @@
             <div class="container to-code">
               <input type="text" placeholder="Text about the input"/>
             </div>
-            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+            
           </div>
         </div>
         <div class="section-row">
@@ -287,7 +313,7 @@
             <div class="container to-code">
               <textarea placeholder="Text about the input"></textarea>
             </div>
-            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+            
           </div>
         </div>
         <div class="section-row">
@@ -309,7 +335,7 @@
                 <option value="opt4">Option 4</option>
               </select>
             </div>
-            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+            
           </div>
         </div>
         <div class="section-row">
@@ -323,7 +349,7 @@
               <input type="radio" name="rdio" value="radio1"><label for="radio1">Radio 1</label>
               <input type="radio" name="rdio" value="radio2"><label for="radio2">Radio 2</label>
             </div>
-            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+            
           </div>
         </div>
         <div class="section-row">
@@ -336,7 +362,7 @@
               <input type="checkbox" id="check1" name="check1" value="Bike"><label for="check1">Check 1</label>
               <input type="checkbox" id="check2" name="check2" value="Car"><label for="check2">Check 2 </label>
             </div>
-            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+            
           </div>
         </div>
       </div>
@@ -352,38 +378,35 @@
         <div class="section-row">
           <div class="section-cell">
             <a name="links-default"></a>
-            <label>Default Link</label>
-            <a href="#top">Defautl Link</a><br /><br />
+            <a href="#top">Default Link</a><br /><br />
             <label for="code-1">Code</label>
             <div class="container to-code">
               <a href="#top">Default Link</a>
             </div>
             <p class="note">This is the default link. No class should be specified</p>
-            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+            
           </div>
         </div>
         <div class="section-row">
           <div class="section-cell">
             <a name="links-warning"></a>
-            <label>Warning Link</label>
             <a href="#top" class="warning">Warning Link</a><br /><br />
             <label for="code-2">Code</label>
             <div class="container to-code">
               <a href="#top" class="warning">Warning Link</a>
             </div>
-            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+            
           </div>
         </div>
         <div class="section-row">
           <div class="section-cell">
             <a name="links-help"></a>
-            <label>Help Link</label>
             <a href="#top" class="help">Help Link</a><br /><br />
             <label for="code-3">Code</label>
             <div class="container to-code">
               <a href="#top" class="help">Help Link</a>
             </div>
-            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+            
           </div>
         </div>
       </div>
@@ -399,25 +422,23 @@
         <div class="section-row">
           <div class="section-cell">
             <a name="buttons-primary"></a>
-            <label>Primary Button</label>
             <a href="#top" class="btn primary">Primary Button</a><br /><br />
             <label for="code-4">Code</label>
             <div class="container to-code">
               <a href="#top" class="btn primary">Primary Button</a>
             </div>
-            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+
           </div>
         </div>
         <div class="section-row">
           <div class="section-cell">
             <a name="buttons-default"></a>
-            <label>Default Button</label>
             <a href="#top" class="btn default">Default Button</a><br /><br />
             <label for="code-5">Code</label>
             <div class="container to-code">
               <a href="#top" class="btn default">Default Button</a>
             </div>
-            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+            
             <br />
             <div style="display:none">
               <ul class="segmented">
@@ -426,6 +447,17 @@
                 <li><a href="#top" class="btn">Button</a></li>
                 <li><a href="#top" class="btn">Button</a></li>
               </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="buttons-destroy"></a>
+            <a href="#top" class="btn destroy">Destroy Button</a><br /><br />
+            <label for="code-4">Code</label>
+            <div class="container to-code">
+              <a href="#top" class="btn destroy">Destroy Button</a>
             </div>
           </div>
         </div>
@@ -449,55 +481,51 @@
               <span class="tag [<modifier class 1> [<modifier class 2>]]">Tag 1</span>
             </div>
             <p>The following samples are ilustrating the use of the modifiers. Notice that one of them has two modifiers, one that applies the color and other to apply a level of transparency.</p>
-            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+            
           </div>
         </div>
         <div class="section-row">
           <div class="section-cell">
             <a name="tags-lightgray"></a>
-            <label>Light gray tag</label>
-            <span class="tag lightgray">Tag 1</span><br /><br />
+            <span class="tag lightgray">Light gray tag</span><br /><br />
             <label for="code-6">Code</label>
             <div class="container to-code">
-              <span class="tag lightgray">Tag 1</span>
+              <span class="tag lightgray">Light gray tag</span>
             </div>
-            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+            
           </div>
         </div>
         <div class="section-row">
           <div class="section-cell">
             <a name="tags-gray"></a>
-            <label>Gray tag</label>
-            <span class="tag gray">Tag 2</span><br /><br />
+            <span class="tag gray">Gray tag</span><br /><br />
             <label for="code-7">Code</label>
             <div class="container to-code">
-              <span class="tag gray">Tag 2</span>
+              <span class="tag gray">Gray tag</span>
             </div>
-            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+            
           </div>
         </div>
         <div class="section-row">
           <div class="section-cell">
             <a name="tags-blue"></a>
-            <label>Blue tag</label>
-            <span class="tag blue">Tag 3</span><br /><br />
+            <span class="tag blue">Blue tag</span><br /><br />
             <label for="code-8">Code</label>
             <div class="container to-code">
-              <span class="tag blue">Tag 3</span>
+              <span class="tag blue">Blue tag</span>
             </div>
-            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+            
           </div>
         </div>
         <div class="section-row">
           <div class="section-cell">
             <a name="tags-orange"></a>
-            <label>Orange tag</label>
-            <span class="tag orange">Tag 4</span><br /><br />
+            <span class="tag orange">Orange tag</span><br /><br />
             <label for="code-10">Code</label>
             <div class="container to-code">
-              <span class="tag orange">Tag 4</span>
+              <span class="tag orange">Orange tag</span>
             </div>
-            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+            
           </div>
         </div>
         <div class="section-row">
@@ -506,12 +534,12 @@
             <label>Inactive tag</label>
             <p>This sample tag is used to show how to apply the "inactive" effect and it has three classes, the main class "tag", the modifier color class "blue" and the modifier class "inactive".</p>
             <p>As you can see, the "inactive" class should be used along with "tag" and one of the available modifier color classes.</p>
-            <span class="tag blue inactive">Tag 5</span><br /><br />
+            <span class="tag blue inactive">Inactive tag</span><br /><br />
             <label for="code-9">Code</label>
             <div class="container to-code">
-              <span class="tag blue inactive">Tag 5</span>
+              <span class="tag blue inactive">Inactive tag</span>
             </div>
-            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+            
           </div>
         </div>
       </div>
@@ -592,7 +620,7 @@
                 </tbody>
               </table>
             </div>
-            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+            
           </div>
         </div>
         <div class="section-row">
@@ -708,7 +736,7 @@
                 </div>
               </div>
             </div>
-            <p align="center"><a class="btn default" href="#summary">Back to Summary</a></p>
+            
           </div>
         </div>
       </div>
