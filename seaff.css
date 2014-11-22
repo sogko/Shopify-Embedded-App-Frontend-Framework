@@ -169,6 +169,7 @@ hr {
   text-transform: none;
   vertical-align: middle;
   -webkit-appearance: none;
+  margin: 0;
 }
 
 /* modifier: primary */
