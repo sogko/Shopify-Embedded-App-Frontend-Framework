@@ -92,6 +92,22 @@ ul {
   -webkit-padding-start: 40px;
 }
 
+form {
+    display: inherit;
+    width: 100%;
+}
+
+/****************************************** 
+* GENERAL CLASSES
+*******************************************/
+.full-width {
+    width: 100%;
+}
+
+.half-width {
+    width: 100%;
+}
+
 /****************************************** 
 * LINKS
 *******************************************/
@@ -315,6 +331,27 @@ hr {
   margin-right: 0px;
 }
 
+.cell-container {
+    display: flex;
+}
+
+.cell-container {
+    
+}
+
+.cell-column {
+    flex: 1;
+    padding: 0 20px 0 0;
+}
+
+.cell-container .cell-column:last-of-type {
+    padding: 0;
+}
+
+.cell-row {
+    flex: 1;
+}
+
 .section-listing {
   padding: 0px;
 }
@@ -418,7 +455,6 @@ hr {
 
 .section-filter input {
   border-radius: 0px;
-  height: 32px;
   padding-left: 28px;
   background-image: url(//cdn.shopify.com/s/assets/admin/icon-sprite-bd3a1bd8c7f763ba78bff5b90abc6ec2.png);
   background-repeat: no-repeat;
@@ -476,13 +512,20 @@ hr {
 /* Inputs */
 input, select {
   border-radius: 4px;
-  height: 28px;
+  height: 32px;
   font-size: 16px;
   margin-bottom: 15px;
-  width: 100%;
   max-width: 100%;
   font-size: 13px;
   border: 1px solid #ccc;
+}
+
+input[type=text], select {
+    width: 100%;
+}
+
+input {
+    height: 28px;
 }
 
 textarea {
