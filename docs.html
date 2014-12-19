@@ -6,7 +6,7 @@
     <title>Shopify Embedded App Frontend Framework</title>
   </head>
   <body>
-    <a target="_blank" href="https://github.com/microapps/Shopify-Embedded-App-Frontend-Framework"><img style="position: absolute; top: 0; right: 0; border: 0; z-index:10" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+    <a style="position: absolute; top: 0px; right: 0px; border: 0px; z-index:10" target="_blank" href="https://github.com/microapps/Shopify-Embedded-App-Frontend-Framework"><img style="position: absolute; top: 0px; right: 0px; border: 0px; z-index:10" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
     <div class="section">
       <div class="section-summary">
         <a name="summary"></a>
@@ -21,7 +21,7 @@
                 <a href="#introduction">Introduction</a>
                 <ul>
                   <li><a href="#introduction-overview">Overview</a></li>
-                  <li><a href="#introduction-what">What are Legacy Apps and Embedded Apps?</a></li>
+                  <li><a href="#introduction-what">Differences between Legacy Apps and Embedded Apps</a></li>
                   <li><a href="#introduction-about">About the documentation</a></li>
                   <li><a href="#introduction-howuse">How to use the framework</a></li>
                   <li><a href="#introduction-howcontribute">How to contribute</a></li>
@@ -104,9 +104,7 @@
           <div class="section-cell">
             <a name="introduction-overview"></a>
             <label>Overview</label>
-            <p>This framework is being built and continuously improved by <a href="http://www.microapps.com" target="_blank">microapps</a> based on the layout of Shopify merchant admin, as well as its embedded applications, in order to help the developers to easily and quickly write the application's frontend so that it has the same look and feel as Shopify merchant admin.</p>
-            <p>The documentation is in its first steps, but for now it is already possible to take a look at some of the elements provided by Shopify merchant admin interface.</p>
-            
+            <p>This framework is built and updated by <a href="http://www.microapps.com" target="_blank">microapps</a> based on the layout of Shopify merchant admin, as well as its embedded applications, in order to help the developers to easily and quickly write the application's frontend so that it has the same look and feel as Shopify merchant admin.</p>
           </div>
         </div>
         <div class="section-row">
@@ -122,11 +120,23 @@
         <div class="section-row">
           <div class="section-cell">
             <a name="introduction-what"></a>
-            <label>What are Legacy Apps and Embedded Apps?</label>
+            <label>Differences between Legacy Apps and Embedded Apps</label>
             <p>The legacy apps, nowadays the most common among all apps available for installation for Shopify stores, are apps that, when accessed through the merchant's store admin, open in a new window or tab, as total "independent" (considering the user experience) application, even though it is obviously tightly related to Shopify in terms of funcionality and use of information. </p>
             <p>Because of this, in order to improve the user experience, Shopify has given the application developers the possibility to develop embedded applications or, in other words, Shopify now allows developers to embed their applications directly inside Shopify admin as well as access and customize many native GUI features. </p>
             <p><img style="box-sizing: border-box; width: 100%;" src="http://docs.shopify.com/assets/images/easdk/easdk-hero-banner.png?1412114319" /></p>
             
+          </div>
+        </div>
+
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="introduction-what"></a>
+            <label>Files involved in an Embedded App built with SEAFF</label>
+            <p>To build an embedded app using SEAFF, there are 3 main files involved in the job</p>
+            <ul>
+              <li>SEAFF (Shopify Embedded App Frontend Framework) css file - Has all the elements needed to build a good looking embedded application</li>
+              <li>EASDK (Embedded App SDK) js file - Has all the elements needed to build a good looking embedded application</li>
+            </ul>
           </div>
         </div>
         
@@ -439,6 +449,7 @@
       <div class="section-content">
         <div class="section-row">
           <div class="section-cell">
+            <a name="buttons-primary"></a>
             <label>Link as a primary button</label>
             <a href="#top" class="btn primary">Primary Button</a><br /><br />
             <label for="code-4">Code</label>
@@ -456,6 +467,7 @@
         </div>
         <div class="section-row">
           <div class="section-cell">
+            <a name="buttons-default"></a>
             <label>Input as default button</label>
             <a href="#top" class="btn default">Default Button</a><br /><br />
             <label for="code-5">Code</label>
@@ -484,6 +496,7 @@
         
         <div class="section-row">
           <div class="section-cell">
+            <a name="buttons-destroy"></a>
             <label>Input as destroy button</label>
             <a href="#top" class="btn destroy">Destroy Button</a><br /><br />
             <label for="code-4">Code</label>
@@ -671,7 +684,6 @@
         </div>
         <div class="section-row">
           <div class="section-listing" style="margin:0">
-            <div class="section-options">
               <ul class="section-tabs">
                 <li class="active"><a href="#top">Tab 1</a></li>
                 <li class=""><a href="#top">Tab 2</a></li>
@@ -717,7 +729,6 @@
                   </table>
                 </div>
               </div>
-            </div>
           </div>
         </div>
         <div class="section-row">
