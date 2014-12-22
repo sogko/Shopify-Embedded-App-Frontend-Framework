@@ -1,8 +1,8 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="seaff.css">
+    <link rel="stylesheet" type="text/css" href="./css/seaff.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-    <script type="text/javascript" src="snippets-generator.js"></script>
+    <script type="text/javascript" src="./js/snippets-generator.js"></script>
     <title>Shopify Embedded App Frontend Framework</title>
   </head>
   <body>
@@ -22,9 +22,18 @@
                 <ul>
                   <li><a href="#introduction-overview">Overview</a></li>
                   <li><a href="#introduction-what">Differences between Legacy Apps and Embedded Apps</a></li>
+                  <li><a href="#introduction-real">Real applications that are already using SEAFF</a></li>
                   <li><a href="#introduction-about">About the documentation</a></li>
                   <li><a href="#introduction-howuse">How to use the framework</a></li>
                   <li><a href="#introduction-howcontribute">How to contribute</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#easdk">Embedded App SDK</a>
+                <ul>
+                  <li><a href="#easdk-overview">Overview</a></li>
+                  <li><a href="#easdk-top">Top bar elements</a></li>
+                  <li><a href="#easdk-modals">Modals and flash messages</a></li>
                 </ul>
               </li>
               <li>
@@ -33,6 +42,7 @@
                   <li><a href="#sections-general">General Structure</a></li>
                   <li><a href="#sections-sample1">Sample Snippet 1 - Section with a single row and a single cell</a></li>
                   <li><a href="#sections-sample2">Sample Snippet 2 - A section row with 3 cells</a></li>
+                  <li><a href="#sections-sample3">Sample Snippet 3 - A section row with a cell divided in columns</a></li>
                 </ul>
               </li>
               <li>
@@ -130,12 +140,24 @@
 
         <div class="section-row">
           <div class="section-cell">
+            <a name="introduction-real"></a>
+            <label>Real applications that are already using SEAFF</label>
+            <p>Check the following list of apps available for installation, in order to take a look at a real embedded app with using SEAFF:</p>
+            <ul>
+              <li><a href="https://apps.shopify.com/shopimap?ref=microapps" target="_blank">ShopiMap</a> - App used to generate a map of customers for the store.<br/></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section-row">
+          <div class="section-cell">
             <a name="introduction-what"></a>
             <label>Files involved in an Embedded App built with SEAFF</label>
             <p>To build an embedded app using SEAFF, there are 3 main files involved in the job</p>
             <ul>
-              <li>SEAFF (Shopify Embedded App Frontend Framework) css file - Has all the elements needed to build a good looking embedded application</li>
-              <li>EASDK (Embedded App SDK) js file - Has all the elements needed to build a good looking embedded application</li>
+              <li><b>SEAFF (Shopify Embedded App Frontend Framework) css file </b>- has all the elements needed to build a good looking embedded application</li>
+              <li><b>EASDK (Embedded App SDK) js file</b> - has all the elements needed to build a good looking embedded application</li>
+              <li><b>Your project HTML files</b> - has to follow the structures defined and explained in this document in order to be well rendered into a very good-looking embedded application.</li>
             </ul>
           </div>
         </div>
@@ -144,7 +166,7 @@
           <div class="section-cell">
             <a name="introduction-howuse"></a>
             <label>How to use the framework</label>
-            <p>This is essentialy a CSS framework, so in order to use it, all you have to do is to add <a target="_blank" href="../../seaff/seaff.css">seaff.css</a> to your application page(s), as shows the following snippet:</p>
+            <p>This is essentialy a CSS framework, so in order to use it, all you have to do is to add <a target="_blank" href="./css/seaff.css">seaff.css</a> to your application page(s), as shows the following snippet:</p>
             <label>Code</label>
             <div class="container to-code">
               <link rel="stylesheet" type="text/css" href="seaff.css">
@@ -155,24 +177,110 @@
             Therefore, the structure of the tags can be generically described, ignoring the attributes and considering "[...]" as optional blocks, using an example of a opening tag, as: </p>
             <label>Code</label>
             <div class="container to-code">
-              <tag  [class="main_class[ modifier_1[ ...[ modifier_N]]]"] />
+              <tag  [class="main_class[ modifier_1[ ...[ modifier_N]]]"]>
+              </tag>
             </div>
-            
           </div>
         </div>
         
         <div class="section-row">
           <div class="section-cell">
             <a name="introduction-howcontribute"></a>
-            <label>How to contirbute</label>
+            <label>How to contribute</label>
             <p>This framework is meant for anyone who wants to have a very good-looking application, following all the patterns stabilished by Shopify merchant admin, and its development is also opened to everyone interested on offering help, which is very appreciated.</p>
-            <p>In order to contribute, just fork the repository <a href="https://github.com/microapps/Shopify-Embedded-App-Frontend-Framework">Shopify-Embedded-App-Frontend-Framework</a> and do as many pull requests as you wish.<p>
+            <p>In order to contribute, just fork the repository <a href="https://github.com/microapps/Shopify-Embedded-App-Frontend-Framework">Shopify-Embedded-App-Frontend-Framework</a> and do as many pull requests as you wish.</p>
             <p>We thank you in advance!<p>
             
           </div>
         </div>
       </div>
     </div>
+
+    <div class="section">
+      <div class="section-summary">
+        <a name="easdk"></a>
+        <h1>Embedded App SDK</h1>
+        <p>This section gives an overview about the SDK, used to embed the application into Shopify environment, to add buttons to the header, build modals and show messages to the user.</p>
+        <p><a href="http://docs.shopify.com/embedded-app-sdk?ref=microapps" target="_blank" class="btn default">Check SDK docs</a></p>
+      </div>
+     
+      <div class="section-content">
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="easdk-overview"></a>
+            <label>Overview</label>
+            <p>As said before, Embedded Apps are those that are accessed inside of the Shopify Merchant Admin, what makes the experience of using an application much better, since the merchant feels inside the environment, as if your application were part of Shopify functionalities.</p>
+            <p>The Embedded App SDK (EASDK) is an API that provides:</p>
+            <ul>
+              <li>Custom modal windows</li>
+              <li>
+                Dialogs:
+                <ul>
+                  <li>Alert</li>
+                  <li>Confirm</li>
+                  <li>Input</li>
+                </ul>
+              </li>
+              <li>
+                Top bar with icon elements:
+                <ul>
+                  <li>Icon</li>
+                  <li>Breadcrumbs</li>
+                  <li>Buttons</li>
+                  <li>Pagination</li>
+                  <li>Dropdown menus</li>
+                </ul>
+              </li>
+              <li>Flash messages</li>
+            </ul>
+            <p>The SDK can be added to your application by including the following snippet</p>
+            <div class="container">
+              &lt;script src="https://cdn.shopify.com/s/assets/external/app.js"&gt;&lt;/script&gt;
+            </div>
+            <p>To learn more and check the full documentation of EASDK, please check <a href="http://docs.shopify.com/embedded-app-sdk?ref=microapps" target="_blank">this link</a>.</p>
+            <p>You can also check all the elements explained in this section by using <a href="https://github.com/Shopify/embedded-app-example" target="_blank">this sample application</a>, provided by <a href="http://www.shopify.com/?ref=microapps" target="_blank">Shopify</a> team.</p>
+          </div>
+        </div>
+
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="easdk-top"></a>
+            <label>Top bar elements</label>
+            <p>The top bar is where most of the elements mentioned in <a href="#easdk-overview">overview</a> are placed.</p>
+            <p>Although the elements of the top bar have the same layout as SEAFF elements, all these elements are inserted by calling methods of Shopify Embedded App SDK and their layout is not influenced by any of SEAFF styles, since they are placed in your application's "parent environment".</p>
+            <p></p>
+            <p>To have the complete information about what can be placed in top bar, check the <a href="http://docs.shopify.com/embedded-app-sdk/methods" target="_blank">Embedded App SDK documentation</a>.</p>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="easdk-modals"></a>
+            <label>Modals and Flash Messages</label>
+            <p>The <a href="http://docs.shopify.com/embedded-app-sdk/methods" target="_blank">Embedded App SDK</a> also has modals and flash messages for several purposes. Despite the content of modals that use iframe, the layout of the modals is out of your application's control and therefore it is not influenced by SEAFF CSS styles.</p>
+            <p>Since it is not possible to simulate the modal windows using the SDK in this page, below are placed some images that show what kind of messages can be displayed to the merchant as well as how they look like</p>
+            <p><label>Alert Modal</label></p>
+            <p><img src="./image/modal-alert.png" style="box-sizing:border-box;width:100%;" /></p>
+            <p><label>Confirm Modal</label></p>
+            <p><img src="./image/modal-confirm.png" style="box-sizing:border-box;width:100%;" /></p>
+            <p><label>Prompt Modal</label></p>
+            <p><img src="./image/modal-prompt.png" style="box-sizing:border-box;width:100%;" /></p>
+            <p><label>Modal containing an iframe</label></p>
+            <p><img src="./image/modal-iframe.png" style="box-sizing:border-box;width:100%;" /></p>
+            <p><label>Modal with several buttons and an iframe</label></p>
+            <p><img src="./image/modal-iframe-buttons.png" style="box-sizing:border-box;width:100%;" /></p>
+            <p><label>Flash Messages</label></p>
+            <p>This message is shown at the bottom of the page. A very common use of it is to give the merchant a feedback when an action was successfully done.</p>
+            <p><img src="./image/flash-message.png" style="box-sizing:border-box;width:100%;" /></p>
+            <p><label>Flash Errors</label></p>
+            <p>This message, like the flash messages, is shown at the bottom of the page to represent errors generated by some action done by the merchant.</p>
+            <p><img src="./image/flash-error.png" style="box-sizing:border-box;width:100%;" /></p>
+          </div>
+        </div>
+      </div>
+
+    </div>    
 
     <div class="section">
       <div class="section-summary">
@@ -188,9 +296,9 @@
             <p>"Introduction", "Sections", "General Inputs", among others, are examples of sections. The sections are used to organize the blocks of information all over the applications (and also all over this document) and they fill the full available width provided by Shopify merchant admin.</p>
             <p>Below some little facts about the sections that are important to be taken into account when organizing the interface:</p>
             <ul>
-              <li>The sections are devided in two main blocks, the summary and the content.</li>
-              <li>The content is devided in rows (as many as you want).</li>
-              <li>The rows are devided in cells (as many as you want). </li>
+              <li>The sections are divided into two main blocks, the summary and the content.</li>
+              <li>The content is divided into rows (as many as you want).</li>
+              <li>The rows are divided into cells (as many as you want). </li>
             </ul>
             <p>"Sections" is a good example of a section with multiple rows and cells. The snippet below shows the general structure of a section:</p>
             <label for="code-11">Code</label>
@@ -207,21 +315,53 @@
                   <!-- A section row with generic quantity of cells -->
                   <div class="section-row">
                     <div class="section-cell">
-                      ...
+                      <div class="cell-container">
+                        <div class="cell-column">
+                          ...
+                        </div>
+                        ...
+                        <div class="cell-column">
+                          ...
+                        </div>
+                      </div>
                     </div>
                     ...
                     <div class="section-cell">
-                      ...
+                      <div class="cell-container">
+                        <div class="cell-column">
+                          ...
+                        </div>
+                        ...
+                        <div class="cell-column">
+                          ...
+                        </div>
+                      </div>
                     </div>
                   </div>
                   ...
                   <div class="section-row">
                     <div class="section-cell">
-                      ...
+                      <div class="cell-container">
+                        <div class="cell-column">
+                          ...
+                        </div>
+                        ...
+                        <div class="cell-column">
+                          ...
+                        </div>
+                      </div>
                     </div>
                     ...
                     <div class="section-cell">
-                      ...
+                      <div class="cell-container">
+                        <div class="cell-column">
+                          ...
+                        </div>
+                        ...
+                        <div class="cell-column">
+                          ...
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -251,9 +391,9 @@
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
+
         <div class="section-row">
           <div class="section-cell">
             <a name="sections-sample2"></a>
@@ -277,9 +417,9 @@
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
+
         <div class="section-row">
           <div class="section-cell">
             <label>Cell 1</label>
@@ -292,6 +432,69 @@
           <div class="section-cell">
             <label>Cell 3</label>
             This is a cell.
+          </div>
+        </div>
+
+        <div class="section-row">
+          <div class="section-cell">
+            <a name="sections-sample3"></a>
+            <label>Sample Snippet 3 - A section row with a cell divided in columns</label>
+            <p>The sample snippet below is used to generate a row with 1 cell divided into columns ("Column 1" and "Column 2"), the second one subdivided in 2 columns ("Column 2A" and "Column 2B")</p>
+            <p>It is possible to add as many "cell-column" divs as you want and it is also possible to add "cell-container" div inside any "cell-column", to subdvide it in more columns. </p>
+            <label>Code</label>
+            <div class="container to-code">
+              <div class="section-row">
+                <div class="section-row">
+                  <div class="section-cell">
+                    <div class="cell-container">
+                      <div class="cell-column">
+                        <label>Column 1</label>
+                        <p>This is the first column</p>
+                      </div>
+                      <div class="cell-column">
+                        <label>Column 2</label>
+                        <p>This is the second column. Below you there is another "cell-container" div divided in 2 other columns</p>
+                        <div class="cell-container">
+                          <div class="cell-column">
+                            <label>Column 2A</label>
+                            <p>This is the first column inside the "Column 2"</p>
+                          </div>
+                          <div class="cell-column">
+                            <label>Column 2B</label>
+                            <p>This is the second column inside the "Column 2"</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="section-row">
+          <div class="section-cell">
+            <div class="cell-container">
+              <div class="cell-column">
+                <label>Column 1</label>
+                <p>This is the first column</p>
+              </div>
+              <div class="cell-column">
+                <label>Column 2</label>
+                <p>This is the second column. Below you there is another "cell-container" div divided in 2 other columns</p>
+                <div class="cell-container">
+                  <div class="cell-column">
+                    <label>Column 2A</label>
+                    <p>This is the first column inside the "Column 2"</p>
+                  </div>
+                  <div class="cell-column">
+                    <label>Column 2B</label>
+                    <p>This is the second column inside the "Column 2"</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -678,8 +881,8 @@
           <div class="section-cell">
             <a name="tables-full"></a>
             <label>Full width table</label>
-            <p>This table fills the whole available width. If used in place of "section", it will fill the whole iframe width, as you can see in the sample page <a href="full-width-table.html">List Sample.</a></p>
-            <p>For documentation purposes, it was written in place of a "section-cell".</p>
+            <p>This table fills the whole available width. If used in place of "section", it will fill the whole iframe width, or else, it will fill the available width inside the tag where it is inserted.</p>
+            <p>In the example below, it is inserted inside a "section-row". For an example where it fits the full width, check the <a href="full-width-table.html">Listing Sample</a>.</p>
           </div>
         </div>
         <div class="section-row">

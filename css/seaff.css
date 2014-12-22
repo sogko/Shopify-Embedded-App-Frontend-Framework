@@ -538,7 +538,7 @@ hr {
 .section-tabs li.active a:hover {
   text-decoration: none;
   background: inherit;
-  color: inherit;
+  color: #31373d;
 }
 
 .section-filter {
@@ -564,7 +564,7 @@ hr {
   border-radius: 0px;
   padding-left: 28px;
   height: 32px;
-  background-image: url(//cdn.shopify.com/s/assets/admin/icon-sprite-bd3a1bd8c7f763ba78bff5b90abc6ec2.png);
+  background-image: url("https://cdn.shopify.com/s/assets/admin/icon-sprite-69fb7315250564ab3a0142a102e7a18c.png");
   background-repeat: no-repeat;
   background-position: -4px -960px;
   display: inline-block;
