@@ -93,19 +93,19 @@ ul {
 }
 
 form {
-    display: inherit;
-    width: 100%;
+  display: inherit;
+  width: 100%;
 }
 
 /****************************************** 
 * GENERAL CLASSES
 *******************************************/
 .full-width {
-    width: 100%;
+  width: 100%;
 }
 
 .half-width {
-    width: 100%;
+  width: 100%;
 }
 
 /****************************************** 
@@ -117,7 +117,7 @@ a {
   line-height: 18px;
   font-size: 13px;
   font-weight: none;
-  position:relative;
+  position: relative;
 }
 
 a:hover {
@@ -144,7 +144,7 @@ a.help {
 a.help:hover {
 }
 
-.tooltip-container{
+.tooltip-container {
   top: -webkit-calc(100% + 8px);
   top: calc(100% + 8px);
   left: 50%;
@@ -153,9 +153,9 @@ a.help:hover {
   z-index: 999;
 }
 
-.tooltip-label{
+.tooltip-label {
   border-radius: 3px;
-  background-color: rgba(33,37,41,0.9);
+  background-color: rgba(33, 37, 41, 0.9);
   color: white;
   display: block;
   font-size: 12px;
@@ -181,6 +181,7 @@ hr {
 * BUTTONS
 *******************************************/
 .btn {
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
@@ -235,9 +236,10 @@ hr {
 }
 
 .btn.destroy:hover {
-  background: rgb(150, 56, 56) linear-gradient(rgb(150, 56, 56), rgb(168, 63, 63)) repeat scroll 0% 0% / auto padding-box border-box;
-  border: 1px solid rgb(113, 42, 42);
-  color: rgb(255, 255, 255);
+  background: #963838 -webkit-linear-gradient(#963838, #a83f3f) repeat scroll 0% 0%/auto padding-box border-box;
+  background: #963838 linear-gradient(#963838, #a83f3f) repeat scroll 0% 0%/auto padding-box border-box;
+  border: 1px solid #712a2a;
+  color: white;
 }
 
 .btn.filter-left:hover {
@@ -251,13 +253,14 @@ hr {
 }
 
 .btn.destroy:active {
-  background: rgb(150, 56, 56) linear-gradient(rgb(150, 56, 56), rgb(168, 63, 63)) repeat scroll 0% 0% / auto padding-box border-box;
-  border: 1px solid rgb(113, 42, 42);
-  color: rgb(255, 255, 255);
+  background: #963838 -webkit-linear-gradient(#963838, #a83f3f) repeat scroll 0% 0%/auto padding-box border-box;
+  background: #963838 linear-gradient(#963838, #a83f3f) repeat scroll 0% 0%/auto padding-box border-box;
+  border: 1px solid #712a2a;
+  color: white;
 }
 
 .btn.filter-left:active {
-  border-right:0;
+  border-right: 0;
 }
 
 /* Segmented Butons - TODO: minor adjustments needed before documenting */
@@ -274,7 +277,7 @@ hr {
 }
 
 .segmented li {
-  float:left;
+  float: left;
   list-style-type: none;
   display: inline-block;
   margin: 0;
@@ -289,6 +292,7 @@ hr {
   border-bottom: #dee3e8 1px solid;
   float: none;
   position: relative;
+  display: -ms-flexbox;
   display: flex;
   display: -webkit-flex;
   padding: 10px 0 10px 0;
@@ -299,8 +303,9 @@ hr {
 }
 
 .section-summary {
-  flex: 0 0 25%;
+  -webkit-flex: 0 0 25%;
   padding: 10px;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
   padding: 30px 30px 20px 50px;
@@ -324,33 +329,37 @@ hr {
 }
 
 .section-content {
-  flex:1;
+  -webkit-flex: 1;
   padding: 10px 20px 15px 15px;
 }
 
 .section-row {
-    display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   padding-bottom: 10px;
 }
 
 .section-row:last-of-type {
-    display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   padding-bottom: 0px;
 }
 
 .section-cell, .section-listing {
   padding: 20px;
   color: #798c9c;
-  flex: 1;
+  -webkit-flex: 1;
   padding: 20px;
   background-color: #FFFFFF;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: #888888;
 }
 
 .section-cell {
- margin-right: 10px;
+  margin-right: 10px;
 }
 
 .section-cell:last-of-type {
@@ -358,24 +367,22 @@ hr {
 }
 
 .cell-container {
-    display: flex;
-}
-
-.cell-container {
-    
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .cell-column {
-    flex: 1;
-    padding: 0 20px 0 0;
+  -webkit-flex: 1;
+  padding: 0 20px 0 0;
 }
 
 .cell-container .cell-column:last-of-type {
-    padding: 0;
+  padding: 0;
 }
 
 .cell-row {
-    flex: 1;
+  -webkit-flex: 1;
 }
 
 .section-listing {
@@ -410,17 +417,15 @@ hr {
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
 }
 
-.section-tabs::after{
+.section-tabs::after {
   content: '';
   display: block;
   -webkit-box-flex: 1;
@@ -442,14 +447,12 @@ hr {
   -webkit-flex-grow: 0;
   -ms-flex-positive: 0;
   flex-grow: 0;
-  -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
+  -webkit-flex-shrink: 0;
   flex-shrink: 0;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
@@ -459,7 +462,7 @@ hr {
   border-top-left-radius: 4px;
 }
 
-.section-tabs li:first-child  {
+.section-tabs li:first-child {
   margin-left: 0;
 }
 
@@ -489,15 +492,12 @@ hr {
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -546,6 +546,7 @@ hr {
   padding-bottom: 0px;
   display: table;
   width: 100%;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -556,6 +557,7 @@ hr {
 .section-filter div div {
   display: table-cell;
 }
+
 .section-filter div div.filter-freecell {
   width: 99%;
 }
@@ -569,7 +571,7 @@ hr {
   background-position: -4px -960px;
   display: inline-block;
   vertical-align: middle;
-  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   color: #222;
@@ -586,7 +588,6 @@ hr {
 /****************************************** 
 * TAGS
 *******************************************/
-
 .tag {
   border-radius: 3px;
   margin-right: 10px;
@@ -635,18 +636,20 @@ input, select {
 }
 
 input[type=text], select {
-    width: 100%;
+  width: 100%;
 }
 
 input {
-    height: 28px;
+  height: 28px;
 }
 
 textarea {
   margin-bottom: 15px !important;
   min-height: 72px;
   line-height: 20px;
+  -webkit-transition: min-height 0.15s;
   transition: min-height 0.15s;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   max-width: 100%;
@@ -659,7 +662,6 @@ textarea {
   display: inline-block;
   color: #222;
   border-radius: 4px;
-
 }
 
 input[type=radio], input[type=checkbox] {
@@ -681,6 +683,7 @@ label {
   margin-bottom: 5px;
   font-weight: bold;
 }
+
 label.label-normal {
   font-weight: normal;
 }
@@ -693,7 +696,7 @@ table.table-section {
   padding-bottom: 8px;
 }
 
-table.table-section tbody tr:hover{
+table.table-section tbody tr:hover {
   background: #f5fbff;
 }
 
@@ -717,7 +720,7 @@ table.table-section .sortable:hover {
 
 /* Modifiers */
 .container code {
-  font-family: Monaco,Consolas,"Lucida Console",monospace;
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
   font-size: 13px;
   color: #575757;
 }
