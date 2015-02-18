@@ -304,6 +304,8 @@ hr {
 
 .section-summary {
   -webkit-flex: 0 0 25%;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
   padding: 10px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -330,6 +332,8 @@ hr {
 
 .section-content {
   -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   padding: 10px 20px 15px 15px;
 }
 
@@ -351,6 +355,8 @@ hr {
   padding: 20px;
   color: #798c9c;
   -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   padding: 20px;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -374,6 +380,8 @@ hr {
 
 .cell-column {
   -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   padding: 0 20px 0 0;
 }
 
@@ -383,6 +391,8 @@ hr {
 
 .cell-row {
   -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .section-listing {
