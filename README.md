@@ -2,7 +2,7 @@
 
 ## Overview
 
-It's a framework built and updated by <a href="http://www.microapps.com" target="_blank">microapps</a> and contributors, based on the layout of the Shopify merchant admin, as well as its embedded applications. It's intended to be a free resource to help Shopipfy Apps Developers to easily and quickly write the application's frontend/ui so that it has the same look and feel as the Shopify merchant admin.
+It's a framework built and updated by <a href="http://www.microapps.com" target="_blank">microapps</a> and contributors, based on the layout of the Shopify merchant admin, as well as its "made by Shopify" embedded applications. It's a free resource to help Shopipfy Apps Developers easily and quickly write the application's frontend/ui so that it has the same look and feel as the Shopify merchant admin.
 
 All the elements and structures were conceived to be used in an Shopify Embedded Application.
 
