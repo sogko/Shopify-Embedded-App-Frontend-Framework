@@ -198,30 +198,28 @@ hr {
   margin: 0;
 }
 
+.btn:active {
+  box-shadow:0 3px 6px rgba(0,0,0,0.2) inset;
+}
+
 /* modifier: primary */
 
 .btn.primary {
   background-color: #479ccf;
-  border: 1px solid #2f82b4;
+  border: 1px solid #479ccf;
   color: #FFFFFF;
 }
 
-.btn.primary:hover {
-  background-color: #3491c8;
-  border: #2a74a0 1px solid;
-  color: #FFFFFF;
-}
-
-.btn.primary:active {
-  background-color: #2f82b4;
-  border: #24658c 1px solid;
+.btn.primary:hover, .btn.primary:active {
+  background-color: #4293C2;
+  border: #479ccf 1px solid;
   color: #FFFFFF;
 }
 
 /* modifiers: default, filter-left */
 .btn.default, .btn.filter-left, .btn.destroy {
-  background-color: #fcfcfc;
-  border: 1px solid #e3e3e3;
+  background-color: #ffffff;
+  border: 1px solid #d3dbe2;
   color: #479ccf;
 }
 
@@ -230,33 +228,19 @@ hr {
   padding: 0 20px 0 9px;
 }
 
-.btn.default:hover, .btn.filter-left:hover {
-  background-color: #efefef;
+.btn.default:hover, .btn.default:active, .btn.filter-left:hover, .btn.filter-left:active {
+  background-color: #F5F6F7;
   border: #d6d6d6 1px solid;
 }
 
-.btn.destroy:hover {
-  background: #963838 -webkit-linear-gradient(#963838, #a83f3f) repeat scroll 0% 0%/auto padding-box border-box;
-  background: #963838 linear-gradient(#963838, #a83f3f) repeat scroll 0% 0%/auto padding-box border-box;
-  border: 1px solid #712a2a;
+.btn.destroy:hover, .btn.destroy:active {
+  background: #FF5D5D none repeat scroll 0% 0%/auto padding-box border-box;
+  border: 1px solid #FF5D5D;
   color: white;
 }
 
 .btn.filter-left:hover {
   border-right: 0;
-}
-
-.btn.default:active, .btn.filter-left:active {
-  background-color: #e3e3e3;
-  border: #c9c9c9 1px solid;
-  border-bottom: 1px solid #e6e6e6;
-}
-
-.btn.destroy:active {
-  background: #963838 -webkit-linear-gradient(#963838, #a83f3f) repeat scroll 0% 0%/auto padding-box border-box;
-  background: #963838 linear-gradient(#963838, #a83f3f) repeat scroll 0% 0%/auto padding-box border-box;
-  border: 1px solid #712a2a;
-  color: white;
 }
 
 .btn.filter-left:active {
