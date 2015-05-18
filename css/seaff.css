@@ -583,11 +583,29 @@ hr {
 * TAGS
 *******************************************/
 .tag {
-  border-radius: 3px;
+  border-radius: 4px;
   margin-right: 10px;
-  padding: 4px 5px 3px 5px;
+  padding: 8px 10px;
   vertical-align: middle;
   border: solid 1px;
+}
+
+.tag.green {
+  background: #b2d86a;
+  color: #4d684b;
+  border-color: transparent;
+}
+
+.tag.yellow {
+  background: #ffe477;
+  color: #6f4f26;
+  border-color: transparent;
+}
+
+.tag.pink {
+  background: #ff9797;
+  color: #8c2929;
+  border-color: transparent;
 }
 
 .tag.gray {
