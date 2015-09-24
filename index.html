@@ -42,6 +42,10 @@
 
     <link data-turbolinks-track="true" href="https://cdn.shopify.com/s/assets/admin/style-a30b16af39a8144195d489e89d162ac6.css" media="all" rel="stylesheet">
     <link data-turbolinks-track="true" href="https://cdn.shopify.com/s/assets/admin/print-7e95040da21512a810c214750b093ec9.css" media="print" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link data-turbolinks-track="true" href="css/seaff-dropdown.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-dropdown.js"></script>
 
 
     <style type="text/css" id="ki-l1z-l4"></style><style type="text/css" id="ki-l1z-lh"></style></head>
@@ -273,10 +277,19 @@
                                 <div class="header-right">
                                     <div class="js-pagination"></div>
                                     <div class="js-buttons">
+                                        
+                                        <span>
+                                            <a id="btn-docs" href="#" class="btn" style="display:none;">SEAFF DOCS</a>
+                                        </span>
+                                        
+                                        <span>
+                                            <a href="#" data-jq-dropdown="#jq-dropdown-1" class="btn">
+                                                Examples <i class="ico ico-16 ico-disclosure"></i></a>
+                                        </span>
 
   <span>
 
-      <a href="http://docs.shopify.com/embedded-app-sdk" target="_blank" class="btn">SDK DOCS</a>
+      <a href="http://docs.shopify.com/embedded-app-sdk?ref=microapps" target="_blank" rel="nofollow" class="btn">SDK DOCS</a>
 
   </span>
                                     </div>
@@ -285,7 +298,14 @@
                         </div>
                     </div>
 
-                    <iframe class="app-iframe app-iframe--admin" frameborder="0" name="app-iframe" src="docs.html" style="display: block; height: calc(100% + 67px);"></iframe>
+                    <iframe id="if-docs" class="app-iframe app-iframe--admin" frameborder="0" name="app-iframe" src="docs.html" style="display: block; height: calc(100% + 67px);"></iframe>
+                    
+                    <iframe id="if-orders" class="app-iframe app-iframe--admin" frameborder="0" name="app-iframe" src="examples/orders.html" style="visibility:hidden; display:none; height: calc(100% + 67px);"></iframe>
+                    
+                    <iframe id="if-products" class="app-iframe app-iframe--admin" frameborder="0" name="app-iframe" src="examples/products.html" style="visibility:hidden; display:none; height: calc(100% + 67px);"></iframe>
+                    
+                    <iframe id="if-customers" class="app-iframe app-iframe--admin" frameborder="0" name="app-iframe" src="examples/customers.html" style="visibility:hidden; display:none; height: calc(100% + 67px);"></iframe>
+                    
                 </div>
 
                 <div class="hide" define="{resourcePicker: new Shopify.SingleSelectResourcePicker(this, &#39;resource[id]&#39;)}">
@@ -301,4 +321,59 @@
 <div id="modal_backdrop" refresh="modal" class="modal-bg"></div>
 <div class="aviary-modal-bg"><div class="aviary-modal"></div></div>
 <!-- Only pixels that need to see the url all other should go inside the iframe -->
+    
+    <div id="jq-dropdown-1" class="jq-dropdown jq-dropdown-tip">
+        <ul class="jq-dropdown-menu">
+            <li><a id="jqd-orders" href="#">Orders list</a></li>
+            <li><a id="jqd-products" href="#">Products list</a></li>
+            <li><a id="jqd-customers" href="#">Customers list</a></li>
+        </ul>
+    </div>
+    
+    
+    <script type="text/javascript">
+        
+        function hideIframe(iframe) {
+            $(iframe).css('display', 'none').css('visibility', 'hidden');
+        }
+        
+        function showIframe(iframe) {
+            $(iframe).css('display', 'block').css('visibility', 'visible');
+        }
+        
+        function hideDocsBtn() {
+            $('#btn-docs').css('display', 'none');
+        }
+        
+        function showDocsBtn() {
+            $('#btn-docs').css('display', 'inline-block');
+        }
+        
+        $('#jqd-orders').on('click', function() {
+            hideIframe($('iframe'));
+            showIframe($('#if-orders'));
+            showDocsBtn();            
+        });
+        
+        $('#jqd-products').on('click', function() {
+            hideIframe($('iframe'));
+            showIframe($('#if-products'));
+            showDocsBtn();
+        });
+        
+        $('#jqd-customers').on('click', function() {
+            hideIframe($('iframe'));
+            showIframe($('#if-customers'));
+            showDocsBtn();
+        });
+        
+        
+        $('#btn-docs').on('click', function() {
+            hideIframe($('iframe'));
+            showIframe($('#if-docs'));
+            hideDocsBtn();
+        });
+        
+    </script>
+    
 </body></html>
