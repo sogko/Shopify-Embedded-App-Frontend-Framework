@@ -166,6 +166,7 @@ a.help:hover {
     text-indent: 0;
     text-shadow: none;
     white-space: nowrap;
+    overflow: hidden;
 }
 
 /*
@@ -199,7 +200,7 @@ hr {
 }
 
 .btn:active {
-    box-shadow:0 3px 6px rgba(0,0,0,0.2) inset;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2) inset;
 }
 
 /* modifier: primary */
@@ -640,15 +641,18 @@ hr {
 input, select {
     border-radius: 4px;
     height: 32px;
-    font-size: 16px;
     margin-bottom: 15px;
     max-width: 100%;
     font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
     border: 1px solid #ccc;
 }
 
 input[type=text], select {
     width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 input {
