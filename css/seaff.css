@@ -50,6 +50,9 @@ th {
     padding: 8px 10px;
     border-bottom: 1px solid #ECECEC;
     -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 td, th {
@@ -187,7 +190,7 @@ hr {
     display: inline-block;
     height: 32px;
     line-height: 30px;
-    padding: 0 9px;
+    padding: 0 15px;
     font-size: 13px;
     border-radius: 4px;
     text-decoration: none;
@@ -217,6 +220,7 @@ hr {
 }
 
 /* modifiers: default, filter-left */
+
 .btn.default, .btn.filter-left, .btn.destroy {
     background-color: #ffffff;
     border: 1px solid #d3dbe2;
@@ -245,6 +249,13 @@ hr {
 
 .btn.filter-left:active {
     border-right: 0;
+}
+
+/* modifier: slim */
+
+
+.btn.slim {
+    padding: 6.5px 10px;
 }
 
 /* Segmented Butons - TODO: minor adjustments needed before documenting */
@@ -640,7 +651,6 @@ hr {
 input, select {
     border-radius: 4px;
     height: 32px;
-    font-size: 16px;
     margin-bottom: 15px;
     max-width: 100%;
     font-size: 13px;
@@ -649,6 +659,7 @@ input, select {
 
 input[type=text], select {
     width: 100%;
+    font-size: 15px;
 }
 
 input {
@@ -698,6 +709,22 @@ label {
 
 label.label-normal {
     font-weight: normal;
+}
+
+input::-webkit-input-placeholder {
+   color: #c3cfd8;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+   color: #c3cfd8;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+   color: #c3cfd8;
+}
+
+input:-ms-input-placeholder {
+   color: #c3cfd8;  
 }
 
 /******************************************
