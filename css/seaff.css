@@ -597,49 +597,41 @@ hr {
 .tag {
     border-radius: 4px;
     margin-right: 10px;
-    padding: 8px 10px;
+    padding: 5px 10px;
     vertical-align: middle;
-    border: solid 1px;
 }
 
 .tag.green {
     background: #b2d86a;
     color: #4d684b;
-    border-color: transparent;
 }
 
 .tag.yellow {
     background: #ffe477;
     color: #6f4f26;
-    border-color: transparent;
 }
 
 .tag.pink {
     background: #ff9797;
     color: #8c2929;
-    border-color: transparent;
 }
 
 .tag.gray {
     background: #aaa;
     color: white;
-    border: solid 1px #a0a0a0;
 }
 
 .tag.lightgray {
     background: #f2f4f5;
-    color: #96a7b6;
-    border: solid 1px #e6ebed;
+    color: #798c9c;
 }
 
 .tag.orange {
-    background-color: #f4c58f;
-    color: #815621;
-    border: solid 1px #e6b77f;
+    background-color: #fec97d;
+    color: #7f3a07;
 }
 
 .tag.blue {
-    border: 1px solid #cbdbee;
     background: #e9f3ff;
     color: #647f9e;
 }

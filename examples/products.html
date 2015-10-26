@@ -1,10 +1,8 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="../css/seaff.css">
-  <link rel="stylesheet" type="text/css" href="../css/seaff-introjs.css">
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/intro.js/1.1.1/intro.min.js"></script>
   <script type="text/javascript" src="../js/snippets-generator.js"></script>
   <title>Shopify Embedded App Frontend Framework</title>
 </head>
@@ -19,7 +17,7 @@
             </ul>
             <div class="section-filter">
               <div>
-                <div data-intro="This tool can help you filtering the products"><a class="btn filter-left ico-down" href="#top">Filter products</a></div>
+                <div><a class="btn filter-left ico-down" href="#top">Filter products</a></div>
                 <div class="filter-freecell"><input class="input-search" type="text" placeholder="Information about this filter"></div>
               </div>
             </div>
@@ -27,7 +25,7 @@
               <div class="section-row">
                 <table class="table-section">
                   <thead>
-                    <tr data-intro="Here you can see the most important information of each product">
+                    <tr>
                       <th><input type="checkbox" name="select-all" id="select-all" value="" /></th>  
                       <th class="sortable">Product</th>
                       <th class="sortable">Inventory</th>
@@ -38,7 +36,7 @@
                   <tbody>
                     <tr>
                       <td><input type="checkbox" value="" /></td>
-                      <td><a href="#top" data-intro="Click on these links to see each product individually">Product 1</a></td>
+                      <td><a href="#top">Product 1</a></td>
                       <td class="total">
                         <p>
                           <span class="stock">X</span>
@@ -81,20 +79,6 @@
       </div>
     </div>
   </div>
-  
-  <div class="section">
-    <div class="section-content">
-      <span>
-    <a id="btn-tour" href="#" class="btn primary">TOUR</a>
-  </span>
-    </div>
-  </div>
-  
-  <script type="text/javascript">
-    $('#btn-tour').on('click', function() {
-      introJs().start();
-    });
-  </script>
   
 </body>
 </html>
