@@ -69,6 +69,18 @@ td {
     color: #798c9c;
 }
 
+.tc {
+    text-align: center !important;
+}
+
+.tr {
+    text-align: right !important;
+}
+
+td.black {
+    color: #31373d;
+}
+
 p {
     display: block;
     -webkit-margin-before: 1em;
@@ -116,7 +128,7 @@ form {
 *******************************************/
 a {
     color: #479ccf;
-    text-decoration: underline;
+    text-decoration: none;
     line-height: 18px;
     font-size: 13px;
     font-weight: none;
@@ -125,6 +137,7 @@ a {
 
 a:hover {
     color: #4293c2;
+    text-decoration: underline;
 }
 
 a.warning {
