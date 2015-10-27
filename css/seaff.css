@@ -836,7 +836,7 @@ table.table-section .sortable:hover {
     text-align: right !important;
 }
 
-.image {
+th.image {
     width: 50px;
     padding-left: 5px;
 }
@@ -850,10 +850,6 @@ table.table-section .sortable:hover {
 .highlight-warning {
     background: #fffbe9;
     color: #e85b0f;
-}
-
-td.black {
-    color: #31373d;
 }
 
 /******************************************
