@@ -819,11 +819,11 @@ table.table-section {
 }
 
 table.table-section tbody tr:hover {
-    background: #f5fbff;
+    background: #eff9fd;
 }
 
 table.table-section .sortable:hover {
-    background: #f5fbff;
+    background: #eff9fd;
     color: #479ccf;
     cursor: hand;
 }
