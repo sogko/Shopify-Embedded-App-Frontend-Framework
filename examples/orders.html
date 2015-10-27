@@ -1,10 +1,8 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="../css/seaff.css">
-  <link rel="stylesheet" type="text/css" href="../css/seaff-introjs.css">
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/intro.js/1.1.1/intro.min.js"></script>
   <script type="text/javascript" src="../js/snippets-generator.js"></script>
   <title>Shopify Embedded App Frontend Framework</title>
 </head>
@@ -17,57 +15,57 @@
           <div class="section-options">
             <ul class="section-tabs">
               <li class="active"><a href="#top">All Orders</a></li>
-              <li class=""><a href="#top" data-intro="Click on this button to see only opened orders">Open</a></li>
+              <li class=""><a href="#top">Open</a></li>
               <li class=""><a href="#top">Unfulfilled</a></li>
               <li class=""><a href="#top">Unpaid</a></li>
             </ul>
             <div class="section-filter">
               <div>
-                <div data-intro="This tool can help you filtering the orders too"><a class="btn filter-left ico-down" href="#top">Filter orders</a></div>
-                <div class="filter-freecell"><input class="input-search" type="text" placeholder="Information about this filter"></div>
+                <div><a class="btn filter-left ico-down" href="#top">Filter orders</a></div>
+                <div class="filter-freecell"><input class="input-search" type="text" placeholder="Start typing to search for orders..."></div>
               </div>
             </div>
             <div class="section-content">
               <div class="section-row">
                 <table class="table-section">
                   <thead>
-                    <tr data-intro="Here you can see the most important information of each order">
-                      <th><input type="checkbox" name="select-all" id="select-all" value="" /></th>  
+                    <tr>
+                      <th><input class="seaff-checkbox" type="checkbox" name="select-all" id="select-all" value="" /><span class="seaff-checkbox--styled"></th>  
                       <th class="sortable">Oder</th>
                       <th class="sortable">Date</th>
                       <th class="sortable">Customer</th>
                       <th class="sortable">Payment Status</th>
                       <th class="sortable">Fulfillment Status</th>
-                      <th class="sortable">Total</th>
+                      <th class="sortable tr">Total</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td><input type="checkbox" value="" /></td>
-                      <td><a href="#top">Order code</a></td>
-                      <td><p>Order date</p></td>
-                      <td><a href="#top">Customer name</a></td>
-                      <td><span class="tag orange">Status</span></td>
+                      <td><input class="seaff-checkbox" type="checkbox" value="" /><span class="seaff-checkbox--styled"></span></td>
+                      <td><a class="subdued" href="#top">Order code</a></td>
+                      <td><p class="subdued">Order date</p></td>
+                      <td><a class="subdued underlined" href="#top">Customer name</a></td>
+                      <td><span class="tag lightgray">Status</span></td>
                       <td><span class="tag yellow">Status</span></td>
-                      <td><p>Total &euro;</p></td>
+                      <td class="tr"><p class="subdued">&euro; Total</p></td>
                     </tr>
                     <tr>
-                      <td><input type="checkbox" value="" /></td>
-                      <td><a href="#top">Order code</a></td>
-                      <td><p>Order date</p></td>
-                      <td><a href="#top">Customer name</a></td>
+                      <td><input class="seaff-checkbox" type="checkbox" value="" /><span class="seaff-checkbox--styled"></td>
+                      <td><a class="warning" href="#top">Order code</a></td>
+                      <td><p class="warning">Order date</p></td>
+                      <td><a class="warning underlined" href="#top">Customer name</a></td>
                       <td><span class="tag orange">Status</span></td>
                       <td><span class="tag yellow">Status</span></td>
-                      <td><p>Total &euro;</p></td>
+                      <td class="tr"><p class="danger">&euro; Total</p></td>
                     </tr>
                     <tr>
-                      <td><input type="checkbox" value="" /></td>
+                      <td><input class="seaff-checkbox" type="checkbox" value="" /><span class="seaff-checkbox--styled"></td>
                       <td><a href="#top">Order code</a></td>
                       <td><p>Order date</p></td>
-                      <td><a href="#top">Customer name</a></td>
+                      <td><a class="underlined normal" href="#top">Customer name</a></td>
                       <td><span class="tag orange">Status</span></td>
                       <td><span class="tag yellow">Status</span></td>
-                      <td><p>Total &euro;</p></td>
+                      <td class="tr"><p>&euro; Total</p></td>
                     </tr>
                   </tbody>
                 </table>
@@ -78,20 +76,6 @@
       </div>
     </div>
   </div>
-  
-  <div class="section">
-    <div class="section-content">
-      <span>
-    <a id="btn-tour" href="#" class="btn primary">TOUR</a>
-  </span>
-    </div>
-  </div>
-  
-  <script type="text/javascript">
-    $('#btn-tour').on('click', function() {
-      introJs().start();
-    });
-  </script>
   
 </body>
 </html>

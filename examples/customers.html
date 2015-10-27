@@ -1,10 +1,8 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="../css/seaff.css">
-  <link rel="stylesheet" type="text/css" href="../css/seaff-introjs.css">
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/intro.js/1.1.1/intro.min.js"></script>
   <script type="text/javascript" src="../js/snippets-generator.js"></script>
   <title>Shopify Embedded App Frontend Framework</title>
 </head>
@@ -15,8 +13,8 @@
         <div class="section-listing">
           <div class="section-options">
             <ul class="section-tabs">
-              <li class="active"><a href="#top">All products</a></li>
-              <li class=""><a href="#top" data-intro="Click on these buttons to filter the customers">Accepts Marketing</a></li>
+              <li class="active"><a href="#top">All Customers</a></li>
+              <li class=""><a href="#top">Accepts Marketing</a></li>
               <li class=""><a href="#top">Repeat Customers</a></li>
               <li class=""><a href="#top">Prospects</a></li>
               <li class=""><a href="#top">From United States</a></li>
@@ -24,47 +22,47 @@
             </ul>
             <div class="section-filter">
               <div>
-                <div data-intro="This tool can help you filtering the customers too"><a class="btn filter-left ico-down" href="#top">Filter customers</a></div>
-                <div class="filter-freecell"><input class="input-search" type="text" placeholder="Information about this filter"></div>
+                <div><a class="btn filter-left ico-down" href="#top">Filter customers</a></div>
+                <div class="filter-freecell"><input class="input-search" type="text" placeholder="Start typing to search for customers..."></div>
               </div>
             </div>
             <div class="section-content">
               <div class="section-row">
                 <table class="table-section">
                   <thead>
-                    <tr data-intro="Here you can see the most important information of each customer">
-                      <th><input type="checkbox" name="select-all" id="select-all" value="" /></th>  
+                    <tr>
+                      <th><input class="seaff-checkbox" type="checkbox" name="select-all" id="select-all" value="" /><span class="seaff-checkbox--styled"></th>  
                       <th class="sortable">Name</th>
                       <th class="sortable">Location</th>
-                      <th class="sortable">Orders</th>
-                      <th class="sortable">Last Order</th>
-                      <th class="sortable">Total Spent</th>
+                      <th class="sortable tc">Orders</th>
+                      <th class="sortable tc">Last Order</th>
+                      <th class="sortable tr">Total Spent</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td><input type="checkbox" value="" /></td>
+                      <td><input class="seaff-checkbox" type="checkbox" value="" /><span class="seaff-checkbox--styled"></td>
                       <td><a href="#top">Customer name</a></td>
-                      <td><p>Customer location</p></td>
-                      <td><p>Number of orders</p></td>
-                      <td><a href="#top">Link to last order</a></td>
-                      <td><p>Total &euro;</p></td>
+                      <td class="subdued"><p>Customer location</p></td>
+                      <td class="tc"><p>Number of orders</p></td>
+                      <td class="tc"><a href="#top">Link to last order</a></td>
+                      <td class="tr"><p>&euro; Total</p></td>
                     </tr>
                     <tr>
-                      <td><input type="checkbox" value="" /></td>
+                      <td><input class="seaff-checkbox" type="checkbox" value="" /><span class="seaff-checkbox--styled"></td>
                       <td><a href="#top">Customer name</a></td>
-                      <td><p>Customer location</p></td>
-                      <td><p>Number of orders</p></td>
-                      <td><a href="#top">Link to last order</a></td>
-                      <td><p>Total &euro;</p></td>
+                      <td class="subdued"><p>Customer location</p></td>
+                      <td class="tc"><p>Number of orders</p></td>
+                      <td class="tc"><a href="#top">Link to last order</a></td>
+                      <td class="tr"><p>&euro; Total</p></td>
                     </tr>
                     <tr>
-                      <td><input type="checkbox" value="" /></td>
+                      <td><input class="seaff-checkbox" type="checkbox" value="" /><span class="seaff-checkbox--styled"></td>
                       <td><a href="#top">Customer name</a></td>
-                      <td><p>Customer location</p></td>
-                      <td><p>Number of orders</p></td>
-                      <td><a href="#top">Link to last order</a></td>
-                      <td><p>Total &euro;</p></td>
+                      <td class="subdued"><p>Customer location</p></td>
+                      <td class="tc"><p>Number of orders</p></td>
+                      <td class="tc"><a href="#top">Link to last order</a></td>
+                      <td class="tr"><p>&euro; Total</p></td>
                     </tr>
                   </tbody>
                 </table>
@@ -75,20 +73,6 @@
       </div>
     </div>
   </div>
-  
-  <div class="section">
-    <div class="section-content">
-      <span>
-    <a id="btn-tour" href="#" class="btn primary">TOUR</a>
-  </span>
-    </div>
-  </div>
-  
-  <script type="text/javascript">
-    $('#btn-tour').on('click', function() {
-      introJs().start();
-    });
-  </script>
   
 </body>
 </html>

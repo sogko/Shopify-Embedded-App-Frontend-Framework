@@ -1,10 +1,8 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="../css/seaff.css">
-  <link rel="stylesheet" type="text/css" href="../css/seaff-introjs.css">
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/intro.js/1.1.1/intro.min.js"></script>
   <script type="text/javascript" src="../js/snippets-generator.js"></script>
   <title>Shopify Embedded App Frontend Framework</title>
 </head>
@@ -19,16 +17,17 @@
             </ul>
             <div class="section-filter">
               <div>
-                <div data-intro="This tool can help you filtering the products"><a class="btn filter-left ico-down" href="#top">Filter products</a></div>
-                <div class="filter-freecell"><input class="input-search" type="text" placeholder="Information about this filter"></div>
+                <div><a class="btn filter-left ico-down" href="#top">Filter products</a></div>
+                <div class="filter-freecell"><input class="input-search" type="text" placeholder="Start typing to search for products..."></div>
               </div>
             </div>
             <div class="section-content">
               <div class="section-row">
                 <table class="table-section">
                   <thead>
-                    <tr data-intro="Here you can see the most important information of each product">
-                      <th><input type="checkbox" name="select-all" id="select-all" value="" /></th>  
+                    <tr>
+                      <th><input class="seaff-checkbox" type="checkbox" name="select-all" id="select-all" value="" /><span class="seaff-checkbox--styled"></th>
+                      <th class="image"></th>
                       <th class="sortable">Product</th>
                       <th class="sortable">Inventory</th>
                       <th class="sortable">Type</th>
@@ -37,36 +36,39 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td><input type="checkbox" value="" /></td>
-                      <td><a href="#top" data-intro="Click on these links to see each product individually">Product 1</a></td>
+                      <td><input class="seaff-checkbox" type="checkbox" value="" /><span class="seaff-checkbox--styled"></td>
+                      <td><a href="#"><img class="thumbnail-image" src="../image/microapps-50x50.jpg" /></a></td>
+                      <td><a href="#top">Product 1</a></td>
                       <td class="total">
                         <p>
-                          <span class="stock">X</span>
-                          in stock for <span class="variants">Y</span> variants
+                          <span class="stock">80</span>
+                          in stock for <span class="variants">3</span> variants
                         </p>
                       </td>
                       <td><p>Type of the product</p></td>
                       <td><p>Vendor name</p></td>
                     </tr>
                     <tr>
-                      <td><input type="checkbox" value="" /></td>
+                      <td><input class="seaff-checkbox" type="checkbox" value="" /><span class="seaff-checkbox--styled"></td>
+                      <td><a href="#"><img class="thumbnail-image" src="../image/microapps-50x50.jpg" /></a></td>
                       <td><a href="#top">Product 2</a></td>
                       <td class="total">
                         <p>
-                          <span class="stock">X</span>
-                          in stock for <span class="variants">Y</span> variants
+                          <span class="stock highlight-warning">2</span>
+                          in stock for <span class="variants">3</span> variants
                         </p>
                       </td>
                       <td><p>Type of the product</p></td>
                       <td><p>Vendor name</p></td>
                     </tr>
                     <tr>
-                      <td><input type="checkbox" value="" /></td>
+                      <td><input class="seaff-checkbox" type="checkbox" value="" /><span class="seaff-checkbox--styled"></td>
+                      <td><a href="#"><img class="thumbnail-image" src="../image/microapps-50x50.jpg" /></a></td>
                       <td><a href="#top">Product 3</a></td>
                       <td class="total">
                         <p>
-                          <span class="stock">X</span>
-                          in stock for <span class="variants">Y</span> variants
+                          <span class="stock highlight-warning">0</span>
+                          in stock for <span class="variants">3</span> variants
                         </p>
                       </td>
                       <td><p>Type of the product</p></td>
@@ -81,20 +83,6 @@
       </div>
     </div>
   </div>
-  
-  <div class="section">
-    <div class="section-content">
-      <span>
-    <a id="btn-tour" href="#" class="btn primary">TOUR</a>
-  </span>
-    </div>
-  </div>
-  
-  <script type="text/javascript">
-    $('#btn-tour').on('click', function() {
-      introJs().start();
-    });
-  </script>
   
 </body>
 </html>
