@@ -266,6 +266,10 @@ hr {
     border: #d6d6d6 1px solid;
 }
 
+.btn.filter-left, .btn.filter-left:hover, .btn.filter-left:active, .btn.filter-left:focus {
+    text-decoration: none;
+}
+
 .btn.destroy:hover, .btn.destroy:active {
     background: #FF5D5D none repeat scroll 0% 0%/auto padding-box border-box;
     border: 1px solid #FF5D5D;
