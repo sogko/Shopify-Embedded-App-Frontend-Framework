@@ -225,7 +225,6 @@ hr {
 }
 
 /* modifier: primary */
-
 .btn.primary {
     background-color: #479ccf;
     border: 1px solid #479ccf;
@@ -238,7 +237,7 @@ hr {
     color: #FFFFFF;
 }
 
-/* modifiers: disabled */
+/* modifier: disabled */
 .btn.disabled, .btn.disabled:hover, .btn.disabled:focus, .btn.disabled:active, .btn.disabled:link, .btn.disabled:visited {
     cursor: default;
     box-shadow: none;
@@ -248,8 +247,7 @@ hr {
     text-decoration: none;
 }
 
-/* modifiers: default, filter-left */
-
+/* modifiers: default, filter-left, destroy */
 .btn.default, .btn.filter-left, .btn.destroy {
     background-color: #ffffff;
     border: 1px solid #d3dbe2;
@@ -345,8 +343,18 @@ hr {
 }
 
 /* modifier: slim */
-.btn.slim {
-    padding: 6.5px 10px;
+.btn-slim {
+    padding: 0px 10px;
+    height: 28px;
+    line-height: 26px;
+}
+
+/* modifier: slim */
+.btn-select-all {
+    padding: 5px 22px 5px 0px;
+    height: 28px;
+    line-height: 26px;
+    background-position: calc(100% - 5px) center !important;
 }
 
 /* Segmented Butons - TODO: minor adjustments needed before documenting */
@@ -796,7 +804,7 @@ input[type=radio], input[type=checkbox] {
     width: 16px;
     border: 1px solid #d3dbe2;
     background-color: #ffffff;
-    margin: 0;
+    margin: 0 0 0 6px;
     box-sizing: border-box;
     vertical-align: middle
 }
@@ -898,6 +906,10 @@ table.table-section .sortable:hover {
     background: #eff9fd;
     color: #479ccf;
     cursor: hand;
+}
+
+table.table-section .slim-col {
+    width: 1px;
 }
 
 .tc {
