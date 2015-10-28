@@ -30,7 +30,12 @@
                 <table class="table-section">
                   <thead>
                     <tr>
-                      <th><input class="seaff-checkbox" type="checkbox" name="select-all" id="select-all" value="" /><span class="seaff-checkbox--styled"></th>  
+                      <th>
+                        <div class="btn default btn-select-all ico-down">
+                          <input class="seaff-checkbox" type="checkbox" name="select-all" id="select-all" value="">
+                          <span class="seaff-checkbox--styled">
+                        </div>
+                      </th> 
                       <th class="sortable">Oder</th>
                       <th class="sortable">Date</th>
                       <th class="sortable">Customer</th>
@@ -71,11 +76,18 @@
                 </table>
               </div>
             </div>
+
+            <div class="pagination">
+              <a class="btn btn-left disabled" href="#"><span class="page-prev"></span></a>
+              <a class="btn btn-right default" href="#"><span class="page-next"></span></a>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
   </div>
+
   
 </body>
 </html>

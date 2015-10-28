@@ -225,7 +225,6 @@ hr {
 }
 
 /* modifier: primary */
-
 .btn.primary {
     background-color: #479ccf;
     border: 1px solid #479ccf;
@@ -238,8 +237,17 @@ hr {
     color: #FFFFFF;
 }
 
-/* modifiers: default, filter-left */
+/* modifier: disabled */
+.btn.disabled, .btn.disabled:hover, .btn.disabled:focus, .btn.disabled:active, .btn.disabled:link, .btn.disabled:visited {
+    cursor: default;
+    box-shadow: none;
+    background: #fafbfc;
+    color: #c3cfd8;
+    border: 1px solid #d3dbe2;
+    text-decoration: none;
+}
 
+/* modifiers: default, filter-left, destroy */
 .btn.default, .btn.filter-left, .btn.destroy {
     background-color: #ffffff;
     border: 1px solid #d3dbe2;
@@ -256,6 +264,10 @@ hr {
     border: #d6d6d6 1px solid;
 }
 
+.btn.filter-left, .btn.filter-left:hover, .btn.filter-left:active, .btn.filter-left:focus {
+    text-decoration: none;
+}
+
 .btn.destroy:hover, .btn.destroy:active {
     background: #FF5D5D none repeat scroll 0% 0%/auto padding-box border-box;
     border: 1px solid #FF5D5D;
@@ -270,11 +282,79 @@ hr {
     border-right: 0;
 }
 
+/* modifiers: pagination buttons */
+.pagination {
+    width: 100%;
+    height: 73px;
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+    /* Safari and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
+}
+
+.btn.btn-left {
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.btn.btn-left, .btn.btn-left:hover, .btn.btn-left:focus, .btn.btn-left:active, .btn.btn-left:link, .btn.btn-left:visited {
+    border-right: none;
+}
+
+.btn.btn-right {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    margin-left: -4px;
+}
+
+.page-prev, .page-next {
+    display: block;
+    width: 1em;
+    height: 1em;
+    padding: 8.5px 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-indent: -9999px;
+}
+
+.page-prev {
+    background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2028%2028%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3Ecircle%2Cellipse%2Cline%2Cpath%2Cpolygon%2Cpolyline%2Crect%2Ctext%7Bfill%3A%23479ccf%20%21important%3B%20%7D%3C%2Fstyle%3E%3Cpath%20d%3D%22M23%2C24.7L12.5%2C14.2L23%2C3.7L20.3%2C1L7%2C14.2l13.3%2C13.3C20.3%2C27.5%2C23%2C24.7%2C23%2C24.7z%22%2F%3E%3C%2Fsvg%3E)
+}
+
+.disabled .page-prev {
+    background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2028%2028%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3Ecircle%2Cellipse%2Cline%2Cpath%2Cpolygon%2Cpolyline%2Crect%2Ctext%7Bfill%3A%23c3cfd8%20%21important%3B%20%7D%3C%2Fstyle%3E%3Cpath%20d%3D%22M23%2C24.7L12.5%2C14.2L23%2C3.7L20.3%2C1L7%2C14.2l13.3%2C13.3C20.3%2C27.5%2C23%2C24.7%2C23%2C24.7z%22%2F%3E%3C%2Fsvg%3E)
+}
+
+.page-next {
+    background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20id%3D%22Layer_1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2028%2028%22%20enable-background%3D%22new%200%200%2028%2028%22%20xml%3Aspace%3D%22preserve%22%20width%3D%2228%22%20height%3D%2228%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3Ecircle%2Cellipse%2Cline%2Cpath%2Cpolygon%2Cpolyline%2Crect%2Ctext%7Bfill%3A%23479ccf%20%21important%3B%20%7D%3C%2Fstyle%3E%3Cpath%20fill%3D%22%23329ECC%22%20d%3D%22M7%2C3.8l10.5%2C10.5L7%2C24.7l2.7%2C2.7L23%2C14.3L9.7%2C1C9.7%2C1%2C7%2C3.8%2C7%2C3.8z%22%2F%3E%3C%2Fsvg%3E)
+}
+
+.disabled .page-next {
+    background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20id%3D%22Layer_1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2028%2028%22%20enable-background%3D%22new%200%200%2028%2028%22%20xml%3Aspace%3D%22preserve%22%20width%3D%2228%22%20height%3D%2228%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3Ecircle%2Cellipse%2Cline%2Cpath%2Cpolygon%2Cpolyline%2Crect%2Ctext%7Bfill%3A%23c3cfd8%20%21important%3B%20%7D%3C%2Fstyle%3E%3Cpath%20fill%3D%22%23329ECC%22%20d%3D%22M7%2C3.8l10.5%2C10.5L7%2C24.7l2.7%2C2.7L23%2C14.3L9.7%2C1C9.7%2C1%2C7%2C3.8%2C7%2C3.8z%22%2F%3E%3C%2Fsvg%3E)
+}
+
 /* modifier: slim */
+.btn-slim {
+    padding: 0px 10px;
+    height: 28px;
+    line-height: 26px;
+}
 
-
-.btn.slim {
-    padding: 6.5px 10px;
+/* modifier: slim */
+.btn-select-all {
+    padding: 5px 22px 5px 0px;
+    height: 28px;
+    line-height: 26px;
+    background-position: calc(100% - 5px) center !important;
 }
 
 /* Segmented Butons - TODO: minor adjustments needed before documenting */
@@ -724,7 +804,7 @@ input[type=radio], input[type=checkbox] {
     width: 16px;
     border: 1px solid #d3dbe2;
     background-color: #ffffff;
-    margin: 0;
+    margin: 0 0 0 6px;
     box-sizing: border-box;
     vertical-align: middle
 }
@@ -826,6 +906,10 @@ table.table-section .sortable:hover {
     background: #eff9fd;
     color: #479ccf;
     cursor: hand;
+}
+
+table.table-section .slim-col {
+    width: 1px;
 }
 
 .tc {
