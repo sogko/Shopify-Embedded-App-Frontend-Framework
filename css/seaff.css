@@ -908,8 +908,15 @@ table.table-section .sortable:hover {
     cursor: hand;
 }
 
-table.table-section .slim-col {
+table.table-section .select-col {
     width: 1px;
+    padding-right: 0;
+}
+
+table.table-section .thumbnail {
+    width: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .tc {
@@ -918,11 +925,6 @@ table.table-section .slim-col {
 
 .tr {
     text-align: right !important;
-}
-
-th.image {
-    width: 50px;
-    padding-left: 5px;
 }
 
 .thumbnail-image {
