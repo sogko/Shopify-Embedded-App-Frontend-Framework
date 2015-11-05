@@ -306,8 +306,6 @@
                     <iframe id="if-products" class="app-iframe app-iframe--admin" frameborder="0" name="app-iframe" src="examples/products.html" style="visibility:hidden; display:none; height: calc(100% + 67px);"></iframe>
                     
                     <iframe id="if-customers" class="app-iframe app-iframe--admin" frameborder="0" name="app-iframe" src="examples/customers.html" style="visibility:hidden; display:none; height: calc(100% + 67px);"></iframe>
-
-                    <iframe id="if-wholesaler" class="app-iframe app-iframe--admin" frameborder="0" name="app-iframe" src="examples/wholesaler-products-view.html" style="visibility:hidden; display:none; height: calc(100% + 67px);"></iframe>
                     
                 </div>
 
@@ -330,7 +328,6 @@
             <li><a id="jqd-orders" href="#">Orders list</a></li>
             <li><a id="jqd-products" href="#">Products list</a></li>
             <li><a id="jqd-customers" href="#">Customers list</a></li>
-            <li><a id="jqd-ws" href="#">Wholesaler Products View</a></li>
         </ul>
     </div>
     
@@ -368,12 +365,6 @@
         $('#jqd-customers').on('click', function() {
             hideIframe($('iframe'));
             showIframe($('#if-customers'));
-            showDocsBtn();
-        });
-
-        $('#jqd-ws').on('click', function() {
-            hideIframe($('iframe'));
-            showIframe($('#if-wholesaler'));
             showDocsBtn();
         });
         
