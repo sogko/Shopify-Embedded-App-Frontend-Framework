@@ -8,7 +8,7 @@
     max-width: 360px;
     list-style: none;
     background: #fff;
-    border: solid 1px #ddd;
+    border: solid 1px #c0c0c0;
     border-radius: 4px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
     overflow: visible;
@@ -16,7 +16,7 @@
     margin: 0;
 }
 .jq-dropdown .jq-dropdown-panel {
-    padding: 10px;
+    padding: 20px;
 }
 .jq-dropdown.jq-dropdown-tip {
     margin-top: 8px;
@@ -28,7 +28,7 @@
     content: '';
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
-    border-bottom: 7px solid #ddd;
+    border-bottom: 7px solid #c0c0c0;
     display: inline-block;
 }
 .jq-dropdown.jq-dropdown-tip:after {
