@@ -712,18 +712,23 @@ hr {
     color: #647f9e;
 }
 
+.tag.small-blue {
+    line-height: 15px;
+    padding: 4px 8px;
+    color: #3e89b5;
+    background: #cae9f7;
+    margin: 0;
+}
+
 .tag.closable {
     border: 1px solid #cbdbee;
     background: #e9f3ff;
     color: #647f9e;
     position: relative;
-}
-
-.tag.closable {
     padding: 5px 30px 5px 7px;
 }
 
-.tag .close {
+.tag.closable .close {
     position: absolute;
     background-repeat: no-repeat;
     background-image: url(http://cdn.shopify.com/s/assets/admin/icon-sprite-b80563bbfd69f535a5598b3208708dc5.png);
@@ -743,7 +748,7 @@ hr {
     right: 0px;
 }
 
-.tag .close:hover {
+.tag.closable .close:hover {
     background-color: #f9fcff;
     cursor: pointer;
 }
