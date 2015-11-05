@@ -761,6 +761,22 @@ hr {
 * INPUTS
 *******************************************/
 
+.input-wrapper {
+    padding: 15px 0 0 0;
+}
+
+.input-wrapper label {
+    vertical-align: top !important;
+}
+
+.input-wrapper * ~ * {
+    margin-left: 5px;
+}
+
+.input-wrapper.inline>* {
+    display: inline-block;
+}
+
 input {
     border-radius: 3px;
     height: 32px;
@@ -781,6 +797,35 @@ input[type=text] {
 
 input {
     height: 28px;
+}
+
+input::-webkit-input-placeholder {
+   color: #c3cfd8;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+   color: #c3cfd8;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+   color: #c3cfd8;
+}
+
+input:-ms-input-placeholder {
+   color: #c3cfd8;  
+}
+
+input[type=radio], input[type=checkbox] {
+    float: left;
+    height: auto;
+    line-height: 1;
+    width: auto;
+    max-width: none;
+    margin: 0 10px 5px 0;
+    border: none;
+    padding: 0;
+    vertical-align: baseline;
+    display: inline-block;
 }
 
 textarea {
@@ -804,19 +849,6 @@ textarea {
     border-radius: 3px;
 }
 
-input[type=radio], input[type=checkbox] {
-    float: left;
-    height: auto;
-    line-height: 1;
-    width: auto;
-    max-width: none;
-    margin: 0 10px 5px 0;
-    border: none;
-    padding: 0;
-    vertical-align: baseline;
-    display: inline-block;
-}
-
 label {
     color: #000;
     display: block;
@@ -825,23 +857,8 @@ label {
 }
 
 label.label-normal {
+    color: #31373d;
     font-weight: normal;
-}
-
-input::-webkit-input-placeholder {
-   color: #c3cfd8;
-}
-
-input:-moz-placeholder { /* Firefox 18- */
-   color: #c3cfd8;
-}
-
-input::-moz-placeholder {  /* Firefox 19+ */
-   color: #c3cfd8;
-}
-
-input:-ms-input-placeholder {
-   color: #c3cfd8;  
 }
 
 /* SELECT */
@@ -915,6 +932,14 @@ input:-ms-input-placeholder {
 
 /* CHECKBOX */
 
+.checkbox-wrapper {
+    position: relative;
+}
+
+td .checkbox-wrapper, th .checkbox-wrapper {
+    margin: 0 0 0 6px;
+}
+
 .checkbox, input[type=checkbox].checkbox, .checkbox-styled {
     display: block;
     position: relative;
@@ -922,9 +947,9 @@ input:-ms-input-placeholder {
     width: 16px;
     border: 1px solid #d3dbe2;
     background-color: #ffffff;
-    margin: 0 0 0 6px;
+    margin: 0;
     box-sizing: border-box;
-    vertical-align: middle
+    vertical-align: middle;
 }
 
 .checkbox, input[type=checkbox].checkbox {
