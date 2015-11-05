@@ -671,7 +671,7 @@ hr {
 * TAGS
 *******************************************/
 .tag {
-    border-radius: 4px;
+    border-radius: 3px;
     margin-right: 10px;
     padding: 5px 10px;
     vertical-align: middle;
@@ -710,6 +710,42 @@ hr {
 .tag.blue {
     background: #e9f3ff;
     color: #647f9e;
+}
+
+.tag.closable {
+    border: 1px solid #cbdbee;
+    background: #e9f3ff;
+    color: #647f9e;
+    position: relative;
+}
+
+.tag.closable {
+    padding: 5px 30px 5px 7px;
+}
+
+.tag .close {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(http://cdn.shopify.com/s/assets/admin/icon-sprite-b80563bbfd69f535a5598b3208708dc5.png);
+    background-position: -9px -3363px;
+    height: 100%;
+    width: 22px;
+    border: none;
+    border-left: 1px solid #d4e2f3;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    display: inline-block;
+    padding: 0;
+    margin: 0 0 0 3px;
+    line-height: 16px;
+    text-indent: -99999px;
+    top: 0px;
+    right: 0px;
+}
+
+.tag .close:hover {
+    background-color: #f9fcff;
+    cursor: pointer;
 }
 
 .tag.inactive {
