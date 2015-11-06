@@ -288,8 +288,8 @@ hr {
 
 .all-selected-msg {
     display: none;
-    position: absolute;
-    margin: -8px 0 0 270px;
+    margin-left: 5px;
+    vertical-align: middle;
     color: #444444;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -304,55 +304,7 @@ hr {
     line-height: 16px;
 }
 
-/* modifier: inline slim buttons */
-.inline-buttons {
-    display: inline-block;
-    font-size: 0;
-    position: absolute;
-    margin-top: -14px;
-}
-
-.inline-buttons * {
-    position: relative;
-}
-
-.inline-buttons .btn-slim, .inline-buttons .btn-slim:hover, .inline-buttons .btn-slim:active, .inline-buttons .btn-slim:focus,
-.inline-buttons .btn-select-all, .inline-buttons .btn-select-all:hover, .inline-buttons .btn-select-all:active, .inline-buttons .btn-select-all:focus {
-    display: inline-block;
-    font-size: 13px;
-    border-radius: 0;
-    border-right: 0;
-    margin: 0;
-}
-
-.inline-buttons div:first-child, .inline-buttons div:first-child:hover, .inline-buttons div:first-child:active, .inline-buttons div:first-child:focus {
-    border-bottom-left-radius: 4px;
-    border-top-left-radius: 4px;
-}
-
-.inline-buttons div:last-child, .inline-buttons div:last-child:hover, .inline-buttons div:last-child:active, .inline-buttons div:last-child:focus {
-    border-right: 1px solid #d3dbe2;;
-    border-bottom-right-radius: 4px;
-    border-top-right-radius: 4px;
-}
-
-.inline-buttons .btn-select-all {
-    padding: 5px 10px;
-    height: 28px;
-    line-height: 16px;
-}
-
-.inline-buttons .btn-select-all .checkbox, .inline-buttons .btn-select-all .checkbox-styled {
-    position: absolute;
-    margin-left: -4px;
-}
-
-.inline-buttons .btn-select-all .items-selected {
-    color: #95a7b7;
-    margin-left: 20px
-}
-
-/* Segmented Butons - TODO: minor adjustments needed before documenting */
+/* Segmented Butons - TODO: minor adjustments needed before documenting 
 .segmented {
     margin-left: 5px;
     padding: 0;
@@ -372,6 +324,89 @@ hr {
     margin: 0;
     position: relative;
     text-align: -webkit-match-parent;
+}*/
+
+.segmented {
+    padding: 0;
+    line-height: 22px;
+    font-size: 0;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.segmented>li {
+    position: relative
+}
+
+.segmented>li .btn {
+    display: inline-block;
+    position: static;
+    border-radius: 0px 0px 0px 0px;
+    border-left-width: 0 !important
+}
+
+.segmented>li .btn.primary {
+    border: 1px solid #479ccf;
+    border-right-color: #3e89b5
+}
+
+.segmented>li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0
+}
+
+.segmented>li:first-child .btn, .segmented>li.first-child .btn {
+    border-radius: 3px 0px 0px 3px;
+    border-left-width: 1px !important
+}
+
+.segmented>li:last-child .btn {
+    border-radius: 0px 3px 3px 0px
+}
+
+.segmented>li:last-child .btn.primary {
+    border-right-color: #479ccf
+}
+
+.segmented>li.middle-child>.btn {
+    border-radius: 0px
+}
+
+.segmented>li:only-child>.btn, .segmented>li.only-child>.btn {
+    border-radius: 3px 3px 3px 3px;
+    border-left-width: 1px !important
+}
+
+.segmented .items-selected {
+    color: #95a7b7;
+    margin-left: 4px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+.segmented .checkbox-wrapper {
+    margin-left: -4px;
+    display: inline-block;
+}
+
+.segmented .btn.active {
+    color: #c3cfd8
+}
+
+.segmented .btn.active.primary {
+    color: #ffffff
+}
+
+.segmented .btn.active:hover {
+    cursor: default
+}
+
+.menu-items-selected {
+    margin: -14px 0 0 -6px;
+    position: absolute;
 }
 
 /******************************************
@@ -460,6 +495,10 @@ hr {
 
 .section-cell:last-of-type {
     margin-right: 0px;
+}
+
+.section-cell.dark {
+    background-color: #f5f6f7;
 }
 
 .cell-container {
@@ -665,6 +704,35 @@ hr {
 .section-filter input[type="text"]:focus {
     border: #479CCF 1px solid;
     outline: 0;
+}
+
+.section-fixed {
+    display: inline-flex;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    max-width: 1180px;
+    padding: 10px 0;
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+
+.section-content-065 {
+    -webkit-flex: 0 0 65%;
+    -ms-flex: 0 0 65%;
+    flex: 0 0 65%;
+    padding: 10px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.section-content-035 {
+    -webkit-flex: 0 0 35%;
+    -ms-flex: 0 0 35%;
+    flex: 0 0 35%;
+    padding: 10px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /******************************************
