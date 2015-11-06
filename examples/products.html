@@ -1,9 +1,6 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="../css/seaff.css">
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script type="text/javascript" src="../js/snippets-generator.js"></script>
   <title>Shopify Embedded App Frontend Framework</title>
 </head>
 <body>
@@ -15,24 +12,26 @@
             <ul class="section-tabs">
               <li class="active"><a href="#top">All Products</a></li>
             </ul>
+
             <div class="section-filter">
-              <div>
-                <div><a class="btn filter-left ico-down" href="#top">Filter products</a></div>
-                <div class="filter-freecell"><input class="input-search" type="text" placeholder="Start typing to search for products..."></div>
+              <div class="section-row">
+                <a class="btn filter-left" href="#">Filter products <span class="icon ico-down"></span></a>
+                <input class="input-search" type="text" placeholder="Start typing to search for products...">
               </div>
             </div>
+
             <div class="section-content">
               <div class="section-row">
                 <table class="table-section">
                   <thead>
                     <tr>
-                      <th>
+                      <th class="select-col">
                         <div class="btn default btn-select-all ico-down">
-                          <input class="seaff-checkbox" type="checkbox" name="select-all" id="select-all" value="">
-                          <span class="seaff-checkbox--styled">
+                          <input class="checkbox" type="checkbox" name="select-all" id="select-all" value="">
+                          <span class="checkbox-styled"></span>
                         </div>
                       </th> 
-                      <th class="image"></th>
+                      <th class="thumbnail"></th>
                       <th class="sortable">Product</th>
                       <th class="sortable">Inventory</th>
                       <th class="sortable">Type</th>
@@ -41,8 +40,8 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td><input class="seaff-checkbox" type="checkbox" value="" /><span class="seaff-checkbox--styled"></td>
-                      <td><a href="#"><img class="thumbnail-image" src="../image/microapps-50x50.jpg" /></a></td>
+                      <td><input class="checkbox" type="checkbox" value="" /><span class="checkbox-styled"></span></td>
+                      <td class="thumbnail"><a href="#"><img class="thumbnail-image" src="../image/microapps-50x50.jpg" /></a></td>
                       <td><a href="#top">Product 1</a></td>
                       <td class="total">
                         <p>
@@ -54,8 +53,8 @@
                       <td><p>Vendor name</p></td>
                     </tr>
                     <tr>
-                      <td><input class="seaff-checkbox" type="checkbox" value="" /><span class="seaff-checkbox--styled"></td>
-                      <td><a href="#"><img class="thumbnail-image" src="../image/microapps-50x50.jpg" /></a></td>
+                      <td><input class="checkbox" type="checkbox" value="" /><span class="checkbox-styled"></span></td>
+                      <td class="thumbnail"><a href="#"><img class="thumbnail-image" src="../image/microapps-50x50.jpg" /></a></td>
                       <td><a href="#top">Product 2</a></td>
                       <td class="total">
                         <p>
@@ -67,8 +66,8 @@
                       <td><p>Vendor name</p></td>
                     </tr>
                     <tr>
-                      <td><input class="seaff-checkbox" type="checkbox" value="" /><span class="seaff-checkbox--styled"></td>
-                      <td><a href="#"><img class="thumbnail-image" src="../image/microapps-50x50.jpg" /></a></td>
+                      <td><input class="checkbox" type="checkbox" value="" /><span class="checkbox-styled"></span></td>
+                      <td class="thumbnail"><a href="#"><img class="thumbnail-image" src="../image/microapps-50x50.jpg" /></a></td>
                       <td><a href="#top">Product 3</a></td>
                       <td class="total">
                         <p>
@@ -84,9 +83,13 @@
               </div>
             </div>
 
-            <div class="pagination">
-              <a class="btn btn-left disabled" href="#"><span class="page-prev"></span></a>
-              <a class="btn btn-right default" href="#"><span class="page-next"></span></a>
+            <div class="section-content">
+              <div class="section-row">
+                <div class="pagination">
+                  <a class="btn btn-left disabled" href="#"><span class="ico-prev"></span></a>
+                  <a class="btn btn-right default" href="#"><span class="ico-next"></span></a>
+                </div>
+              </div>
             </div>
             
           </div>

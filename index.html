@@ -306,6 +306,8 @@
                     <iframe id="if-products" class="app-iframe app-iframe--admin" frameborder="0" name="app-iframe" src="examples/products.html" style="visibility:hidden; display:none; height: calc(100% + 67px);"></iframe>
                     
                     <iframe id="if-customers" class="app-iframe app-iframe--admin" frameborder="0" name="app-iframe" src="examples/customers.html" style="visibility:hidden; display:none; height: calc(100% + 67px);"></iframe>
+
+                    <iframe id="if-add-customer" class="app-iframe app-iframe--admin" frameborder="0" name="app-iframe" src="examples/add-customer.html" style="visibility:hidden; display:none; height: calc(100% + 67px);"></iframe>
                     
                 </div>
 
@@ -328,6 +330,7 @@
             <li><a id="jqd-orders" href="#">Orders list</a></li>
             <li><a id="jqd-products" href="#">Products list</a></li>
             <li><a id="jqd-customers" href="#">Customers list</a></li>
+            <li><a id="jqd-add-customer" href="#">Add a Customers</a></li>
         </ul>
     </div>
     
@@ -367,7 +370,12 @@
             showIframe($('#if-customers'));
             showDocsBtn();
         });
-        
+
+        $('#jqd-add-customer').on('click', function() {
+            hideIframe($('iframe'));
+            showIframe($('#if-add-customer'));
+            showDocsBtn();
+        });
         
         $('#btn-docs').on('click', function() {
             hideIframe($('iframe'));

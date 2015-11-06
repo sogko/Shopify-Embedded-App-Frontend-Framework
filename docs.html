@@ -25,7 +25,7 @@
     <meta name="DC.language" scheme="DCTERMS.URI" content="en" />
     <!-- Endof - Dublin core  -->
 
-    <link rel="stylesheet" type="text/css" href="http://seaff.microapps.com/css/seaff.css">
+    <link rel="stylesheet" type="text/css" href="css/seaff.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script type="text/javascript" src="http://seaff.microapps.com/js/snippets-generator.js"></script>
     <title>Shopify Embedded App Frontend Framework</title>
@@ -960,10 +960,10 @@
                         <li class=""><a href="#top">Tab 3</a></li>
                     </ul>
                     <div class="section-filter">
-                        <div>
-                            <div><a class="btn filter-left ico-down" href="#top">Filter</a></div>
-                            <div class="filter-freecell"><input class="input-search" type="text" placeholder="Information about this filter"></div>
-                        </div>
+                      <div class="section-row">
+                        <a class="btn filter-left" href="#">Filter <span class="icon ico-down"></span></a>
+                        <input class="input-search" type="text" placeholder="Information about this filter">
+                      </div>
                     </div>
                     <div class="section-content">
                         <div class="section-row">
@@ -1014,10 +1014,10 @@
                                 <li class=""><a href="#top">Tab 3</a></li>
                             </ul>
                             <div class="section-filter">
-                                <div>
-                                    <div><a class="btn filter-left ico-down" href="#top">Filter</a></div>
-                                    <div class="filter-freecell"><input class="input-search" type="text" placeholder="Information about this filter" /></div>
-                                </div>
+                              <div class="section-row">
+                                <a class="btn filter-left" href="#">Filter <span class="icon ico-down"></span></a>
+                                <input class="input-search" type="text" placeholder="Information about this filter">
+                              </div>
                             </div>
                             <div class="section-content">
                                 <div class="section-row">
@@ -1092,6 +1092,131 @@
                     &lt;body>
                     <div class="box notice"><i class="ico-warning"></i>Message</div>
                     ...
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="section-summary">
+        <a name="message-boxes"></a>
+        <h1>Icons</h1>
+        <p>This section lists the available icons in the Shopify admin and describes how to use them.</p>
+    </div>
+    <div class="section-content">
+
+        <div class="section-row">
+            <div class="section-cell">
+                <span id="ico-check" class="icon ico-check"></span>
+                <label for="ico-check">ico-check</label>
+            </div>
+            <div class="section-cell">
+                <span id="ico-checkmark-green" class="icon ico-checkmark-green"></span>
+                <label for="ico-checkmark-green">ico-checkmark-green</label>
+            </div>
+            <div class="section-cell">
+                <span id="ico-prev" class="icon ico-prev"></span>
+                <label for="ico-prev">ico-prev</label>
+            </div>
+
+            <div class="section-cell">
+                <span id="ico-next" class="icon ico-next"></span>
+                <label for="ico-next    ">ico-next</label>
+            </div>
+            <div class="section-cell">
+                <span id="ico-down" class="icon ico-down"></span>
+                <label for="ico-down">ico-down</label>
+            </div>
+            <div class="section-cell">
+                <span id="ico-down-gray" class="icon ico-down-gray"></span>
+                <label for="ico-down-gray">ico-down-gray</label>
+            </div>
+        </div>
+
+        <div class="section-row">
+            <div class="section-cell">
+                <span id="ico-clear-bluegray" class="icon ico-clear-bluegray"></span>
+                <label for="ico-clear-bluegray">ico-clear-bluegray</label>
+            </div>
+            <div class="section-cell">
+                <span id="ico-fail-red" class="icon ico-fail-red"></span>
+                <label for="ico-fail-red">ico-fail-red</label>
+            </div>
+            <div class="section-cell">
+                <span id="ico-cancel-blue" class="icon ico-cancel-blue"></span>
+                <label for="ico-cancel-blue">ico-cancel-blue</label>
+            </div>
+
+            <div class="section-cell">
+                <span id="ico-cancel-lightblue" class="icon ico-cancel-lightblue"></span>
+                <label for="ico-cancel-lightblue">ico-cancel-lightblue</label>
+            </div>
+            <div class="section-cell">
+                <span id="ico-notice" class="icon ico-notice"></span>
+                <label for="ico-notice">ico-notice</label>
+            </div>
+            <div class="section-cell">
+                <span id="ico-warning" class="icon ico-warning"></span>
+                <label for="ico-warning">ico-warning</label>
+            </div>
+        </div>
+
+        <div class="section-row">
+            <div class="section-cell">
+                <span id="ico-order-page" class="icon ico-order-page"></span>
+                <label for="ico-order-page">ico-order-page</label>
+            </div>
+            <div class="section-cell">
+                <span id="ico-products-page" class="icon ico-products-page"></span>
+                <label for="ico-products-page">ico-products-page</label>
+            </div>
+            <div class="section-cell">
+                <span id="ico-customers-page" class="icon ico-customers-page"></span>
+                <label for="ico-customers-page">ico-customers-page</label>
+            </div>
+
+            <div class="section-cell">
+                <span id="ico-calendar-blue" class="icon ico-calendar-blue"></span>
+                <label for="ico-calendar-blue">ico-calendar-blue</label>
+            </div>
+            <div class="section-cell">
+                <span id="ico-popular-searches" class="icon ico-popular-searches"></span>
+                <label for="ico-popular-searches">ico-popular-searches</label>
+            </div>
+            <div class="section-cell">
+                <span id="ico-buy-button" class="icon ico-buy-button"></span>
+                <label for="ico-buy-button">ico-buy-button</label>
+            </div>
+        </div>
+
+        <div class="section-row">
+            <div class="section-cell">
+                <span id="ico-mobile-visitors" class="icon ico-mobile-visitors"></span>
+                <label for="ico-mobile-visitors">ico-mobile-visitors</label>
+            </div>
+            <div class="section-cell">
+                <span id="ico-help-blue" class="icon ico-help-blue"></span>
+                <label for="ico-help-blue">ico-help-blue</label>
+            </div>
+            <div class="section-cell" style="visibility:hidden;">
+            </div>
+
+            <div class="section-cell" style="visibility:hidden;">
+            </div>
+            <div class="section-cell" style="visibility:hidden;">
+            </div>
+            <div class="section-cell" style="visibility:hidden;">
+            </div>
+        </div>
+
+        <div class="section-row">
+            <div class="section-cell">
+                <label>How to use</label>
+                <p>You can put the icon you need inside any element, like buttons, anchors, etc. Also you can use the class "icon" to view them like simple icons.</p>
+                <label for="code-10">Code</label>
+                <div class="container to-code">
+                    <span class="icon ico-check"></span>
                 </div>
             </div>
         </div>
