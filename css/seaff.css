@@ -201,6 +201,7 @@ hr {
     background-color: #4293C2;
     border: #479ccf 1px solid;
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 /* modifier: disabled */
@@ -225,15 +226,13 @@ hr {
 .btn.default:hover, .btn.default:active, .btn.filter-left:hover, .btn.filter-left:active {
     background-color: #F5F6F7;
     border: #d6d6d6 1px solid;
+    text-decoration: none;
 }
 
 .btn.filter-left, .btn.filter-left:hover, .btn.filter-left:active, .btn.filter-left:focus {
     border-right: none;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
-}
-
-.btn.filter-left, .btn.filter-left:hover, .btn.filter-left:active, .btn.filter-left:focus {
     text-decoration: none;
 }
 
@@ -241,6 +240,7 @@ hr {
     background: #FF5D5D none repeat scroll 0% 0%/auto padding-box border-box;
     border: 1px solid #FF5D5D;
     color: white;
+    text-decoration: none;
 }
 
 /* modifiers: pagination buttons */
