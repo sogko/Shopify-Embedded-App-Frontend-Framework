@@ -478,11 +478,9 @@ hr {
 
 .section-cell, .section-listing {
     padding: 20px;
-    color: #798c9c;
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    padding: 20px;
     background-color: #FFFFFF;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -499,6 +497,25 @@ hr {
 
 .section-cell.dark {
     background-color: #f5f6f7;
+}
+
+.section-upload-images {
+    padding: 20px;
+}
+
+.section-upload-images * {
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+    /* Safari and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
 }
 
 .cell-container {
@@ -522,6 +539,9 @@ hr {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: #dee3e8 1px solid;
 }
 
 .section-listing {
@@ -688,9 +708,6 @@ hr {
 .section-filter input {
     padding-left: 28px;
     height: 32px;
-    background-image: url("https://cdn.shopify.com/s/assets/admin/icon-sprite-69fb7315250564ab3a0142a102e7a18c.png");
-    background-repeat: no-repeat;
-    background-position: -4px -960px;
     display: inline-block;
     vertical-align: middle;
     -moz-box-sizing: border-box;
@@ -712,8 +729,7 @@ hr {
     -ms-flex: 1;
     flex: 1;
     max-width: 1180px;
-    padding: 10px 0;
-    margin: 0 10px;
+    margin: 10px auto;
     box-sizing: border-box;
 }
 
@@ -733,6 +749,20 @@ hr {
     padding: 10px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+.section-header {
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #31373d;
+}
+
+.section-header>* {
+    display: inline !important;
 }
 
 /******************************************
@@ -830,7 +860,7 @@ hr {
 *******************************************/
 
 .input-wrapper {
-    padding: 15px 0 0 0;
+    padding: 15px 0;
 }
 
 .input-wrapper label {
@@ -843,6 +873,13 @@ hr {
 
 .input-wrapper.inline>* {
     display: inline-block;
+}
+
+.input-search {
+    padding-left: 28px;
+    background-image: url("https://cdn.shopify.com/s/assets/admin/icon-sprite-69fb7315250564ab3a0142a102e7a18c.png");
+    background-repeat: no-repeat;
+    background-position: -4px -960px;
 }
 
 input {
@@ -1339,6 +1376,10 @@ table .thumbnail-image {
 
 .select-wrapper:after, .ico-down-gray {
     background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20id%3D%22Layer_1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2028%2028%22%20enable-background%3D%22new%200%200%2028%2028%22%20xml%3Aspace%3D%22preserve%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3Ecircle%2Cellipse%2Cline%2Cpath%2Cpolygon%2Cpolyline%2Crect%2Ctext%7Bfill%3A%23798c9c%20%21important%3B%20%7D%3C%2Fstyle%3E%3Cpath%20fill%3D%22%23329ECC%22%20d%3D%22M24.5%2C6.2L13.9%2C16.8L3.5%2C6.2L0.8%2C9l13.2%2C13.3L27.2%2C9L24.5%2C6.2z%22%2F%3E%3C%2Fsvg%3E);
+}
+
+.ico-upload-image {
+    background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2080%2080%22%3E%3Cpath%20d%3D%22M80%2057.6l-4-18.7v-23.9c0-1.1-.9-2-2-2h-3.5l-1.1-5.4c-.3-1.1-1.4-1.8-2.4-1.6l-32.6%207h-27.4c-1.1%200-2%20.9-2%202v4.3l-3.4.7c-1.1.2-1.8%201.3-1.5%202.4l5%2023.4v20.2c0%201.1.9%202%202%202h2.7l.9%204.4c.2.9%201%201.6%202%201.6h.4l27.9-6h33c1.1%200%202-.9%202-2v-5.5l2.4-.5c1.1-.2%201.8-1.3%201.6-2.4zm-75-21.5l-3-14.1%203-.6v14.7zm62.4-28.1l1.1%205h-24.5l23.4-5zm-54.8%2064l-.8-4h19.6l-18.8%204zm37.7-6h-43.3v-51h67v51h-23.7zm25.7-7.5v-9.9l2%209.4-2%20.5zm-52-21.5c-2.8%200-5-2.2-5-5s2.2-5%205-5%205%202.2%205%205-2.2%205-5%205zm0-8c-1.7%200-3%201.3-3%203s1.3%203%203%203%203-1.3%203-3-1.3-3-3-3zm-13-10v43h59v-43h-59zm57%202v24.1l-12.8-12.8c-3-3-7.9-3-11%200l-13.3%2013.2-.1-.1c-1.1-1.1-2.5-1.7-4.1-1.7-1.5%200-3%20.6-4.1%201.7l-9.6%209.8v-34.2h55zm-55%2039v-2l11.1-11.2c1.4-1.4%203.9-1.4%205.3%200l9.7%209.7c-5.2%201.3-9%202.4-9.4%202.5l-3.7%201h-13zm55%200h-34.2c7.1-2%2023.2-5.9%2033-5.9l1.2-.1v6zm-1.3-7.9c-7.2%200-17.4%202-25.3%203.9l-9.1-9.1%2013.3-13.3c2.2-2.2%205.9-2.2%208.1%200l14.3%2014.3v4.1l-1.3.1z%22%20fill%3D%22%23d3dbe2%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E);
 }
 
 /* PNG icons */
