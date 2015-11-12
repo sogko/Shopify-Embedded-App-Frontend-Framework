@@ -310,6 +310,10 @@
                     <iframe id="if-add-customer" class="app-iframe app-iframe--admin" frameborder="0" name="app-iframe" src="examples/add-customer.html" style="visibility:hidden; display:none; height: calc(100% + 67px);"></iframe>
 
                     <iframe id="if-add-product" class="app-iframe app-iframe--admin" frameborder="0" name="app-iframe" src="examples/add-product.html" style="visibility:hidden; display:none; height: calc(100% + 67px);"></iframe>
+
+                    <iframe id="if-ws-customers" class="app-iframe app-iframe--admin" frameborder="0" name="app-iframe" src="examples/wholesaler-customers-view.html" style="visibility:hidden; display:none; height: calc(100% + 67px);"></iframe>
+
+                    <iframe id="if-ws-products" class="app-iframe app-iframe--admin" frameborder="0" name="app-iframe" src="examples/wholesaler-products-view.html" style="visibility:hidden; display:none; height: calc(100% + 67px);"></iframe>
                     
                 </div>
 
@@ -334,6 +338,8 @@
             <li><a id="jqd-customers" href="#">Customers list</a></li>
             <li><a id="jqd-add-customer" href="#">Add a customer</a></li>
             <li><a id="jqd-add-product" href="#">Add a product</a></li>
+            <li><a id="jqd-ws-customers" href="#">WS customers view</a></li>
+            <li><a id="jqd-ws-products" href="#">WS products view</a></li>
         </ul>
     </div>
     
@@ -383,6 +389,18 @@
         $('#jqd-add-product').on('click', function() {
             hideIframe($('iframe'));
             showIframe($('#if-add-product'));
+            showDocsBtn();
+        });
+
+        $('#jqd-ws-customers').on('click', function() {
+            hideIframe($('iframe'));
+            showIframe($('#if-ws-customers'));
+            showDocsBtn();
+        });
+
+        $('#jqd-ws-products').on('click', function() {
+            hideIframe($('iframe'));
+            showIframe($('#if-ws-products'));
             showDocsBtn();
         });
         
