@@ -96,6 +96,15 @@
                             <li><a href="#buttons-default">Default Button</a></li>
                             <li><a href="#buttons-destroy">Destroy Button</a></li>
                             <li><a href="#buttons-disabled">Disabled Button</a></li>
+                            <li><a href="#buttons-slim">Slim Button</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#segmented-buttons">Segmented Buttons</a>
+                        <ul>
+                            <li><a href="#segmented-primary">Segmented Primary Buttons</a></li>
+                            <li><a href="#segmented-default">Segmented Default Buttons</a></li>
+                            <li><a href="#segmented-mixed">Mixed Segmented Buttons</a></li>
                         </ul>
                     </li>
                     <li>
@@ -107,6 +116,7 @@
                             <li><a href="#tags-blue">Blue tag</a></li>
                             <li><a href="#tags-orange">Orange tag</a></li>
                             <li><a href="#tags-inactive">Inactive tag</a></li>
+                            <li><a href="#tags-closable">Closable tag</a></li>
                         </ul>
                     </li>
                     <li style="display:none">
@@ -785,6 +795,140 @@
                 </div>
             </div>
         </div>
+
+        <div class="section-row">
+            <div class="section-cell">
+                <a name="buttons-slim"></a>
+                <label>Slim Buttons</label>
+                <p>This is a modifier to reduce the size of primary, default or any button you need.</p>
+                <label>Link as a primary slim button</label>
+                <a href="#" class="btn primary btn-slim">Slim Primary Button</a><br /><br />
+                <label for="code-4">Code</label>
+                <div class="container to-code">
+                    <a href="#" class="btn primary btn-slim">Slim Primary Button</a>
+                </div>
+                <br />
+                <label>Input as default slim button</label>
+                <input type="button" class="btn default btn-slim" value="Slim Default Button"><br /><br />
+                <label for="code-4">Code</label>
+                <div class="container to-code">
+                    <input type="button" class="btn default btn-slim" value="Slim Default Button">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="section-summary">
+        <a name="segmented-buttons"></a>
+        <h1>Segmented Buttons</h1>
+        <p>This section exaplains how to use segmented buttons, a modifier that provides the style to concatenate some buttons</p>
+    </div>
+    <div class="section-content">
+        <div class="section-row">
+            <div class="section-cell">
+                <a name="segmented-primary"></a>
+                <label>Segmented Primary Buttons</label>
+                <ul class="segmented">
+                    <li>
+                        <div class="btn primary">Button one</div>
+                    </li>
+                    <li>
+                        <div class="btn primary">Button two</div>
+                    </li>
+                    <li>
+                        <div class="btn primary">Button three</div>
+                    </li>
+                </ul>
+
+                <br /><br />
+
+                <label for="code-1">Code</label>
+                <div class="container to-code">
+                    <ul class="segmented">
+                        <li>
+                            <div class="btn primary">Button one</div>
+                        </li>
+                        <li>
+                            <div class="btn primary">Button two</div>
+                        </li>
+                        <li>
+                            <div class="btn primary">Button three</div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="section-row">
+            <div class="section-cell">
+                <a name="segmented-default"></a>
+                <label>Segmented Default Buttons</label>
+
+                <ul class="segmented">
+                    <li>
+                        <div class="btn default">Button one</div>
+                    </li>
+                    <li>
+                        <div class="btn default">Button two</div>
+                    </li>
+                    <li>
+                        <div class="btn default">Button three</div>
+                    </li>
+                </ul>
+
+                <br /><br />
+                <label for="code-2">Code</label>
+                <div class="container to-code">
+                    <ul class="segmented">
+                        <li>
+                            <div class="btn default">Button one</div>
+                        </li>
+                        <li>
+                            <div class="btn default">Button two</div>
+                        </li>
+                        <li>
+                            <div class="btn default">Button three</div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="section-row">
+            <div class="section-cell">
+                <a name="segmented-mixed"></a>
+                <label>Mixed Segmented Buttons</label>
+                <ul class="segmented">
+                    <li>
+                        <div class="btn primary btn-slim">Button primary</div>
+                    </li>
+                    <li>
+                        <div class="btn default btn-slim">Button default</div>
+                    </li>
+                    <li>
+                        <div class="btn disabled btn-slim">Button disabled</div>
+                    </li>
+                </ul>
+
+                <br /><br />
+                <label for="code-3">Code</label>
+                <div class="container to-code">
+                    <ul class="segmented">
+                        <li>
+                            <div class="btn primary btn-slim">Button primary</div>
+                        </li>
+                        <li>
+                            <div class="btn default btn-slim">Button default</div>
+                        </li>
+                        <li>
+                            <div class="btn disabled btn-slim">Button disabled</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -899,6 +1043,24 @@
 
             </div>
         </div>
+
+        <div class="section-row">
+            <div class="section-cell">
+                <a name="tags-closable"></a>
+                <label>Closable tag</label>
+                <p>This element has its own color and effects so it doesn't need any modifier color class. As you can see in the code below, it is necessary to include the element that shows the closable button inside the tag.</p>
+
+                <span class="tag closable">Closable tag<span class="close"></span></span>
+
+                <br /><br />
+                <label for="code-9">Code</label>
+                <div class="container to-code">
+                    <span class="tag closable">Closable tag <span class="close"></span> </span>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 </div>
 

@@ -304,35 +304,15 @@ hr {
     line-height: 16px;
 }
 
-/* Segmented Butons - TODO: minor adjustments needed before documenting 
+/* Segmented Butons */
+
 .segmented {
-    margin-left: 5px;
     padding: 0;
     line-height: 22px;
     font-size: 0;
     margin: 0;
     display: inline-block;
     vertical-align: middle;
-    list-style: disc outside none;
-    color: #31373d;
-}
-
-.segmented li {
-    float: left;
-    list-style-type: none;
-    display: inline-block;
-    margin: 0;
-    position: relative;
-    text-align: -webkit-match-parent;
-}*/
-
-.segmented {
-    padding: 0;
-    line-height: 22px;
-    font-size: 0;
-    margin: 0;
-    display: inline-block;
-    vertical-align: middle
 }
 
 .segmented>li {
@@ -343,40 +323,40 @@ hr {
     display: inline-block;
     position: static;
     border-radius: 0px 0px 0px 0px;
-    border-left-width: 0 !important
+    border-left-width: 0 !important;
 }
 
 .segmented>li .btn.primary {
     border: 1px solid #479ccf;
-    border-right-color: #3e89b5
+    border-right-color: #3e89b5;
 }
 
 .segmented>li {
     list-style-type: none;
     display: inline-block;
-    margin: 0
+    margin: 0;
 }
 
 .segmented>li:first-child .btn, .segmented>li.first-child .btn {
     border-radius: 3px 0px 0px 3px;
-    border-left-width: 1px !important
+    border-left-width: 1px !important;
 }
 
 .segmented>li:last-child .btn {
-    border-radius: 0px 3px 3px 0px
+    border-radius: 0px 3px 3px 0px;
 }
 
 .segmented>li:last-child .btn.primary {
-    border-right-color: #479ccf
+    border-right-color: #479ccf;
 }
 
 .segmented>li.middle-child>.btn {
-    border-radius: 0px
+    border-radius: 0px;
 }
 
 .segmented>li:only-child>.btn, .segmented>li.only-child>.btn {
     border-radius: 3px 3px 3px 3px;
-    border-left-width: 1px !important
+    border-left-width: 1px !important;
 }
 
 .segmented .items-selected {
@@ -393,15 +373,15 @@ hr {
 }
 
 .segmented .btn.active {
-    color: #c3cfd8
+    color: #c3cfd8;
 }
 
 .segmented .btn.active.primary {
-    color: #ffffff
+    color: #ffffff;
 }
 
 .segmented .btn.active:hover {
-    cursor: default
+    cursor: default;
 }
 
 .menu-items-selected {
@@ -820,6 +800,7 @@ hr {
 
 .tag.closable {
     border: 1px solid #cbdbee;
+    border-radius: 2px;
     background: #e9f3ff;
     color: #647f9e;
     position: relative;
@@ -835,8 +816,8 @@ hr {
     width: 22px;
     border: none;
     border-left: 1px solid #d4e2f3;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
     display: inline-block;
     padding: 0;
     margin: 0 0 0 3px;
