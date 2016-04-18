@@ -753,6 +753,7 @@ hr {
     margin-right: 10px;
     padding: 5px 10px;
     vertical-align: middle;
+    display: inline-block;
 }
 
 .tag.green {
@@ -898,7 +899,7 @@ input::-moz-placeholder {  /* Firefox 19+ */
 }
 
 input:-ms-input-placeholder {
-   color: #c3cfd8;  
+   color: #c3cfd8;
 }
 
 input[type=radio], input[type=checkbox] {
