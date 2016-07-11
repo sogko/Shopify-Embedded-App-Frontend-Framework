@@ -8,7 +8,7 @@ All the elements and structures were conceived to be used in a Shopify Embedded 
 
 To learn how to use the framework, have examples of use and information about Shopify Embedded Applications, <a href="http://seaff.microapps.com" target="_blank">please check the SEAFF documentation page</a>.
 
-Used in our live projects: [moonmail][moonmail] & [monei][monei]
+Used in our live projects: [MoonMail][moonmail] & [MONEI][monei]
 
 ## Files found in the project
 
