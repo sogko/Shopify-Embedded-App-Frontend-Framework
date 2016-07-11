@@ -6,7 +6,9 @@ SEAFF is a framework built and updated by <a href="http://www.microapps.com" tar
 
 All the elements and structures were conceived to be used in a Shopify Embedded Application.
 
-To learn how to use the framework, have examples of use and information about Shopify Embedded Applications, <a href="http://seaff.microapps.com" target="_blank">please check SEAFF documentation page</a>.
+To learn how to use the framework, have examples of use and information about Shopify Embedded Applications, <a href="http://seaff.microapps.com" target="_blank">please check the SEAFF documentation page</a>.
+
+Used in our live projects: [moonmail][moonmail] & [monei][monei]
 
 ## Files found in the project
 
@@ -20,3 +22,7 @@ This project includes the files that should be included in your Shopify Embedded
 ## How to contribute
 
 Just fork the project and make pull requests. Any contribution is kindly appreciated :)
+
+[moonmail]: https://moonmail.io/?utm_source=seaff-shopify-repo-readme&utm_medium=click&utm_campaign=github
+[monei]: https://monei.net/en/?utm_source=seaff-shopify-repo-readme&utm_medium=click&utm_campaign=github
+
