@@ -745,18 +745,18 @@ hr {
 }
 
 .section-content-065 {
-    -webkit-flex: 0 0 65%;
-    -ms-flex: 0 0 65%;
-    flex: 0 0 65%;
+    -webkit-flex: 0 0 66.66%;
+    -ms-flex: 0 0 66.66%;
+    flex: 0 0 66.66%;
     padding: 10px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 .section-content-035 {
-    -webkit-flex: 0 0 35%;
-    -ms-flex: 0 0 35%;
-    flex: 0 0 35%;
+    -webkit-flex: 0 0 33.33%;
+    -ms-flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
     padding: 10px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
