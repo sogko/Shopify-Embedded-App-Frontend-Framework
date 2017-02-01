@@ -24,5 +24,5 @@ This project includes the files that should be included in your Shopify Embedded
 Just fork the project and make pull requests. Any contribution is kindly appreciated :)
 
 [moonmail]: https://moonmail.io/?utm_source=seaff-shopify-repo-readme&utm_medium=click&utm_campaign=github
-[monei]: https://monei.net/en/?utm_source=seaff-shopify-repo-readme&utm_medium=click&utm_campaign=github
+[monei]: https://monei.net/?utm_source=seaff-shopify-repo-readme&utm_medium=click&utm_campaign=github
 
