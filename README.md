@@ -1,4 +1,6 @@
-# DEPRECATED SEE [Shopify Polaris](https://github.com/Shopify/polaris)
+# Deprecated. See the new [Shopify Polaris](https://github.com/Shopify/polaris)
+
+which rocks, by the way!
 
 # Shopify Embedded App Frontend Framework
 
